@@ -2,25 +2,18 @@ h1{
 
    
     font-size: 36px;
-
+    color: pink;
 }
 
-h1{
-    color: pink
-}
+
 
 p{
     font-size: 18px;
-}
-
-p{
-    color:blue
+    color:blue;
 }
 
 ul{
-    color: orange
-}
-
-ul{
+    color: orange;
     list-style-type: square;
 }
+
