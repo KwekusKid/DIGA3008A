@@ -17,3 +17,13 @@ ul{
     list-style-type: square;
 }
 
+.navlinks{
+    list-style-type: none;
+    background-color: black
+
+}
+
+.navlinks :hover{
+    color:blueviolet
+}
+
