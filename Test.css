@@ -19,11 +19,11 @@ ul{
 
 .navlinks{
     list-style-type: none;
-    background-color: black
+    background-color: black;
 
 }
 
-.navlinks :hover{
-    color:blueviolet
+.navlinks a{
+    color:blueviolet;
 }
 
