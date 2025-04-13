@@ -91,7 +91,13 @@ nav ul li a{
     object-fit: center;
 }
 
-
+.BlogText p{
+    display: -webkit-box;
+    -webkit-line-clamp: -3;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    margin: 20px 0px;
+}
 
 
 
