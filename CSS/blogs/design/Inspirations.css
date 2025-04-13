@@ -2,23 +2,25 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   
 .item {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   
   .item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border: 1px solid #ddd;
+    width: 100%;              /* Makes it fill the item block */
+    height: 200px;            /* Uniform height for all */
+    object-fit: cover;        /* Crop edges instead of stretching */
+    display: block;           /* Removes weird inline spacing */
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
   
   .caption {
