@@ -1,0 +1,19 @@
+.blogText{
+    padding: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: black;
+}
+
+.headerImage{
+    padding: center;
+    text-align: center;
+}
+
+.firstParagraph{
+    padding: center;
+    text-align: center;
+}
