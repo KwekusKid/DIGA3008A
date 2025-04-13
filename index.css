@@ -3,6 +3,29 @@ body {
 }
 
 #CollapsingMenu{
-    margin-top: 30px;
-    margin-right: 100px;
+    color:white;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+nav ul{
+    margin: 10px 1300px 5px 5px;
+    background-color: #dbe6d8;
+
+
+  
+}
+
+nav ul a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color:black;
+    
+}
+
+nav ul a:hover{
+    text-transform: uppercase;
 }
