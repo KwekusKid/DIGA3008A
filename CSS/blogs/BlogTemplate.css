@@ -15,12 +15,7 @@ body{
 }
 
 
-.firstParagraph p{
-    font-family: 'Times New Roman', Times, serif;
-}
-.firstParagraph h3{
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 .divider{
     border: none;
     border-top: 1px solid #ccc; 
@@ -38,6 +33,16 @@ body{
 }
 
 .firstParagraph p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.firstParagraph h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.firstParagraph p{
     text-align: left;
 
 }
@@ -50,6 +55,7 @@ body{
     margin-left: 540px;
    
 }
+
 .secondParagraph p{
     text-align: left;
 
@@ -58,6 +64,8 @@ body{
 .secondParagraph h3{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 .thirdParagraph{
     max-width: 400px;
