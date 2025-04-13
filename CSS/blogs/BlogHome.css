@@ -1,0 +1,25 @@
+
+
+ul li section{
+    display: grid;
+    
+}
+
+nav ul li a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color:white;
+}
+
+.containerOne{
+    
+    background-color: rgba(244, 243, 243, 0.629);
+    margin: 25px 1000px 25px 30px;
+
+}
+
+#ThumbnailOne{
+ width: 40px
+}
+
+
