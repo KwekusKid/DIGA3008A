@@ -1,3 +1,8 @@
-h1{
-    color: #0000FF
+body {
+    background-color: black;
+}
+
+#CollapsingMenu{
+    margin-top: 30px;
+    margin-right: 100px;
 }
