@@ -17,13 +17,11 @@ ul{
     list-style-type: square;
 }
 
-.navlinks{
-    list-style-type: none;
-    background-color: black;
-
+.wow{
+    color: aliceblue;
 }
 
-.navlinks a{
-    color:blueviolet;
+.navbar{
+    color: purple;
 }
 
