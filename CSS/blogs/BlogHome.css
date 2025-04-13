@@ -20,7 +20,29 @@ nav ul li a{
 
 #ThumbnailOne{
  width: 40px
- 
+
 }
+
+#ThumbnailTwo{
+    width: 40px;
+}
+
+#ThumbnailThree{
+    width: 40px;
+}
+
+#ThumbnailFour{
+    width: 40px;
+}
+
+.blogs ul li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    
+}
+
+
 
 
