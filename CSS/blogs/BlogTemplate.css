@@ -13,7 +13,47 @@ body{
     text-align: center;
 }
 
-.firstParagraph{
-    padding: center;
-    text-align: center;
+.firstParagraph {
+    max-width: 300px; 
+    line-height: 1.6;
+    margin: 20px;
+    margin-left: 630px;
+   
+    
 }
+.firstParagraph p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.firstParagraph h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.divider{
+    border: none;
+    border-top: 1px solid #ccc; /* Light gray, thin line */
+    margin: 2rem 0;             /* Add space above and below */
+    width: 100%;   
+}
+
+
+.secondParagraph {
+    max-width: 300px; /* or whatever makes sense for your layout */
+    line-height: 1.6;
+    margin: 20px 0px;
+    margin-left: 630px;
+}
+
+.secondParagraph h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thirdParagraph{
+    max-width: 300px; /* or whatever makes sense for your layout */
+    line-height: 1.6;
+    margin: 20px 0px;
+    margin-left: 630px;
+}
+
+.thirdParagraph h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
