@@ -37,13 +37,16 @@ nav ul li a{
     background-color: rgba(244, 243, 243, 0.629);
     margin: 25px 1000px 25px 30px;
 
+
 }
 
 
 
 
 #ThumbnailOne{
- width: 40px
+ width: 40px;
+ padding: 70px;
+  
 
 }
 
