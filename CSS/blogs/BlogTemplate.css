@@ -11,16 +11,10 @@ body{
 .headerImage{
     padding: center;
     text-align: center;
-}
-
-.firstParagraph {
-    max-width: 300px; 
-    line-height: 1.6;
-    margin: 20px;
-    margin-left: 630px;
-   
     
 }
+
+
 .firstParagraph p{
     font-family: 'Times New Roman', Times, serif;
 }
@@ -29,17 +23,36 @@ body{
 }
 .divider{
     border: none;
-    border-top: 1px solid #ccc; /* Light gray, thin line */
-    margin: 2rem 0;             /* Add space above and below */
+    border-top: 1px solid #ccc; 
+    margin: 2rem 0;             
     width: 100%;   
+}
+
+.firstParagraph {
+    max-width: 400px; 
+    line-height: 1.6;
+    margin: 20px;
+    margin-left: 590px;
+   
+    
+}
+
+.firstParagraph p{
+    text-align: left;
+
 }
 
 
 .secondParagraph {
-    max-width: 300px; /* or whatever makes sense for your layout */
+    max-width: 500px; 
     line-height: 1.6;
     margin: 20px 0px;
-    margin-left: 630px;
+    margin-left: 540px;
+   
+}
+.secondParagraph p{
+    text-align: left;
+
 }
 
 .secondParagraph h3{
@@ -47,10 +60,15 @@ body{
 }
 
 .thirdParagraph{
-    max-width: 300px; /* or whatever makes sense for your layout */
+    max-width: 400px;
     line-height: 1.6;
     margin: 20px 0px;
-    margin-left: 630px;
+    margin-left: 590px;
+}
+
+.thirdParagraph p{
+    text-align: left;
+
 }
 
 .thirdParagraph h3{
