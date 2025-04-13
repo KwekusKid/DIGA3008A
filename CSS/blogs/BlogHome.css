@@ -18,29 +18,53 @@ nav ul li a{
 
 }
 
+.containerTwo{
+    
+    background-color: rgba(244, 243, 243, 0.629);
+    margin: 25px 1000px 25px 30px;
+
+}
+
+.containerThree{
+    
+    background-color: rgba(244, 243, 243, 0.629);
+    margin: 25px 1000px 25px 30px;
+
+}
+
+.containerFour{
+    
+    background-color: rgba(244, 243, 243, 0.629);
+    margin: 25px 1000px 25px 30px;
+
+}
+
+
+
+
 #ThumbnailOne{
  width: 40px
 
 }
 
 #ThumbnailTwo{
-    width: 40px;
+    width: 60px;
 }
 
 #ThumbnailThree{
-    width: 40px;
+    width: 60px;
 }
 
 #ThumbnailFour{
-    width: 40px;
+    width: 60px;
 }
 
-.blogs ul li{
-    display: inline-block;
-    text-align: center;
-    margin-right: 40px;
-    margin-left: 40px;
-    
+.Blogs{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 30px;
 }
 
 
