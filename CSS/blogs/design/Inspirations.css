@@ -1,7 +1,18 @@
+.InspirationText{
+    background-color: black;
+
+}
+
+.InspirationText p{
+    color: white;
+}
+
+
+
 .collage {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1.8rem;
+    gap: 2rem;
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -23,6 +34,107 @@
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  
+
+.item .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item input:checked ~ .modal {
+    display: flex;
+  }
+
+  .image-container {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .item:hover .image-container img {
+    transform: scale(1.05);
+  }
+
+  .mini-caption {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    color: #555;
+  }
+
+  .item-wrapper input:checked ~ .modal {
+    display: block;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(6px);
+    background: rgba(23, 22, 22, 0.6);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #check:checked ~ .modal {
+    display: flex;
+   
+  }
+ 
+  #check:checked ~ .modal-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  #check:checked ~.modal-content img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  #check:checked ~#modal-description {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
   }
   
   .caption {
