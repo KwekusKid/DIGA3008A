@@ -7,6 +7,7 @@
     <meta name="description" content="My Portfolio">
     <meta name="author" content="Apayin Odame- Takyi 2601677">
     <link rel = "stylesheet" href = "../main.css"> 
+    <link rel = "stylesheet" href = "../Portfolio/Portfolio.css"> 
     
 </head>
 <body>
@@ -17,19 +18,57 @@
 <h3>WORKS</h3>
 
 <ul>
-<li>Games</li>
-<p>
-    <iframe frameborder="0" src="https://itch.io/embed/3473163?border_width=3&amp;bg_color=c02a2a&amp;link_color=010101" width="556" height="171"><a href="https://apayin.itch.io/cable-core">Cable Core by Apayin</a></iframe>
-</p>
-<p>
-    <iframe frameborder="0" src="https://itch.io/embed/3127346" width="552" height="167"><a href="https://jordanchicksen.itch.io/19-blaine-avenue-full-game">19 Blaine Avenue by Jordan Chicksen, Apayin, Daynavos</a></iframe>
-</p>
+<li><h3>Games</h3></li>
 
 
 
-<li>Photography</li>
-<li>Film</li>
+
+<li><h3>Photography</h3></li>
+<li><h3>Film</h3></li>
 
 </ul>
+
+<section class="accordion-container">
+    <section class="accordion-item">
+        <input type="checkbox" id="games-toggle" class="accordion-toggle" hidden>
+      <label for = "games-toggle" class="accordion-header">
+        <h3>GAMES</h3>
+        <p class="arrow">▼</p>
+      </label>
+      <section class="accordion-content">
+        <!-- Put your images and content here -->
+        
+            <p>
+            <iframe frameborder="0" src="https://itch.io/embed/3473163?border_width=3&amp;bg_color=c02a2a&amp;link_color=010101" width="556" height="171"><a href="https://apayin.itch.io/cable-core">Cable Core by Apayin</a></iframe>
+        </p>
+        <p>
+            <iframe frameborder="0" src="https://itch.io/embed/3127346" width="552" height="167"><a href="https://jordanchicksen.itch.io/19-blaine-avenue-full-game">19 Blaine Avenue by Jordan Chicksen, Apayin, Daynavos</a></iframe>
+        </p>
+    
+      </section>
+    </section>
+  
+    <section class="accordion-item">
+        <input type="checkbox" id="photo-toggle" class="accordion-toggle" hidden>
+  <label for="photo-toggle" class="accordion-header">
+        <h3>PHOTOGRAPHY</h3>
+        <p class="arrow">▼</p>
+  </label>
+      <section class="accordion-content">
+        <p>Photography-related content goes here.</p>
+      </section>
+    </section>
+  
+    <section class="accordion-item">
+        <input type="checkbox" id="film-toggle" class="accordion-toggle" hidden>
+        <label for="film-toggle" class="accordion-header">
+       <h3>FILM</h3>
+        <p class="arrow">▼</p>
+        </label>
+      <section class="accordion-content">
+        <p>Film-related content goes here.</p>
+      </section>
+    </section>
+  </section>
 </body>
 </html>
