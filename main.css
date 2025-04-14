@@ -80,3 +80,54 @@ body p{
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    #CollapsingMenu {
+      font-size: 24px;
+      margin-left: 8px;
+      margin-top: 15px;
+    }
+  
+    .NavBar {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      transition: right 0.3s ease;
+    }
+  
+    .NavBar a {
+      font-size: 24px;
+    }
+  
+    #check:checked ~ .NavBar {
+      right: 0;
+      position: fixed;
+    }
+  
+    .closeNavBar {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 40px;
+    }
+  
+    body h1, body h2, body h3, body h4, body h5 {
+      font-size: 90%;
+      text-align: center;
+    }
+  
+    body p {
+      font-size: 90%;
+      text-align: center;
+      padding: 0 1rem;
+    }
+  }

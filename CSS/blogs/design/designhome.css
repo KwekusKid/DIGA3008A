@@ -1,0 +1,50 @@
+
+
+
+
+.Image img {
+    width: 90%;
+  height: 300px;
+ margin-right: 300px
+  
+  }
+
+  .Image:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .Image p{
+    font-size: 20px;
+    margin-top: 8px;
+    padding-top: 8px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .Image a {
+    text-decoration: none;
+  }
+
+  .Image p a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .Image p a:hover{
+    text-decoration: underline;
+  }
+
+.Image a, .Image p:hover{
+ text-decoration: underline;
+}
+
+
+  .ImageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 128px;
+    padding: 64px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
