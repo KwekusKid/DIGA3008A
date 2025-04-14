@@ -2,7 +2,11 @@
 
 ul li section{
     display: grid;
-    
+    gap: 32px;
+    padding: 16px;
+    max-width: 1200px;
+    margin: center;
+  
 }
 
 nav ul li a{
