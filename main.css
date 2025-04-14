@@ -131,3 +131,14 @@ body p{
       padding: 0 16px;
     }
   }
+
+  .footer{
+    color:white;
+     
+  }
+
+  .footer p{
+    text-align: center;
+    font-size: 12px; 
+    margin-top: 20px; 
+}
