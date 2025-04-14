@@ -44,11 +44,27 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.3s ease;
-    padding: 0 16px;
-    font-size: 16px;
+    padding: 0px 16px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+   
+    
+   
     
   }
 
+  .accordion-content img{
+    width: 40%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(225, 224, 224, 0.1);
+  }
+
+  .accordion-content img:hover{
+    transform: scale(1.05);
+  }
   .accordion-toggle:checked + .accordion-header + .accordion-content {
     max-height: 400px;
     padding: 16px;
