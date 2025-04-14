@@ -48,3 +48,28 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  @media screen and (max-width: 768px) {
+    .ImageContainer {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      padding: 32px 16px;
+    }
+  
+    .Image img {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+    }
+  
+    .Image p {
+      font-size: 16px;
+      padding-top: 4px;
+      margin-top: 4px;
+      text-align: center;
+    }
+  
+    .Image {
+      text-align: center;
+    }
+  }
