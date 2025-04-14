@@ -97,7 +97,7 @@ nav ul li a{
 
 .BlogText p{
     display: -webkit-box;
-    -webkit-line-clamp: -3;
+    line-clamp: -3;
     -webkit-box-orient:vertical;
     overflow: hidden;
     margin: 0px 0px;
