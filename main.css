@@ -128,6 +128,6 @@ body p{
     body p {
       font-size: 90%;
       text-align: center;
-      padding: 0 1rem;
+      padding: 0 16px;
     }
   }
