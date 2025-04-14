@@ -48,7 +48,8 @@
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     display: grid;
-   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 16px;
     
    
     
@@ -56,7 +57,7 @@
 
   .accordion-content img{
     width: 40%;
-    height: 100px;
+    height: auto;
     object-fit: cover;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(225, 224, 224, 0.1);
@@ -66,7 +67,7 @@
     transform: scale(1.05);
   }
   .accordion-toggle:checked + .accordion-header + .accordion-content {
-    max-height: 400px;
+    max-height: 1000vh;
     padding: 16px;
   }
 
