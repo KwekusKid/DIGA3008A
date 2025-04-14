@@ -38,17 +38,7 @@
 
   
 
-.item .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0; left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.7);
-    align-items: center;
-    justify-content: center;
-  }
+
 
   .item input:checked ~ .modal {
     display: flex;
@@ -77,40 +67,60 @@
     color: #555;
   }
 
-  .item-wrapper input:checked ~ .modal {
-    display: block;
-  }
+ 
 
   .modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(6px);
-    background: rgba(23, 22, 22, 0.6);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
+    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow-y: auto;
+    
   }
 
   #check:checked ~ .modal {
     display: flex;
    
   }
+
+  .fullscreen-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    padding: 2rem;
+  }
  
-  #check:checked ~ .modal-content {
-    background: #fff;
+ .modal-content {
+    background: white;
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 2rem;
     max-width: 800px;
     width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
     text-align: center;
     animation: fadeIn 0.4s ease-in-out;
+    position: relative;
   }
 
-  #check:checked ~.modal-content img {
+ .modal-content img {
     width: 100%;
     height: auto;
     max-height: 400px;
@@ -118,7 +128,7 @@
     border-radius: 10px;
   }
 
-  #check:checked ~#modal-description {
+ #modal-description {
     font-size: 1rem;
     color: #333;
   }
