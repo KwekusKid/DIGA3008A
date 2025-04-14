@@ -95,14 +95,15 @@
     
     background: rgba(36, 34, 34, 0.3);
     border-radius: 10px;
-    padding: 2rem;
-    max-width: 1000px;
-    width: 120%;
+    padding: 180px 140px;
+    max-width: 900px;
+    width: 90%;
     max-height: 90vh;
     overflow-y: auto;
     text-align: center;
     animation: fadeIn 0.4s ease-in-out;
     position: relative;
+    
   }
 
  .modal-content img {
@@ -111,11 +112,14 @@
     max-height: 400px;
     object-fit: contain;
     border-radius: 10px;
+    align-items: center;
   }
 
- #modal-description {
+ #modal-description p {
     font-size: 1rem;
-    color: #333;
+    color: #e4e4e4;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
   }
   
   .close {
