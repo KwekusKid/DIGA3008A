@@ -1,12 +1,10 @@
-
-
 ul li section{
     display: grid;
     gap: 32px;
     padding: 16px;
     max-width: 1200px;
     margin: center;
-  
+    list-style: none;
 }
 
 nav ul li a{
@@ -17,29 +15,31 @@ nav ul li a{
 
 .containerOne{
     
-    background-color: rgba(244, 243, 243, 0.5);
+    background-color: rgba(244, 243, 243, 0.4);
     margin: 25px 1000px 25px 30px;
-
+    border-radius: 5px;
 }
 
 .containerTwo{
     
-    background-color: rgba(244, 243, 243, 0.5);
+    background-color: rgba(244, 243, 243, 0.4);
     margin: 25px 1000px 25px 30px;
-
+    border-radius: 5px;
 }
 
 .containerThree{
     
-    background-color: rgba(244, 243, 243, 0.5);
+    background-color: rgba(244, 243, 243, 0.4);
     margin: 25px 1000px 25px 30px;
-
+    border-radius: 5px;
 }
 
 .containerFour{
     
-    background-color: rgba(244, 243, 243, 0.5);
+    background-color: rgba(244, 243, 243, 0.4);
     margin: 25px 1000px 25px 30px;
+    border-radius: 5px;
+
 
 
 }
@@ -78,7 +78,7 @@ nav ul li a{
 }
 
 .blogContainer{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     margin: 20px 0px;
@@ -100,9 +100,15 @@ nav ul li a{
     -webkit-line-clamp: -3;
     -webkit-box-orient:vertical;
     overflow: hidden;
-    margin: 20px 0px;
+    margin: 0px 0px;
 }
 
+.BlogText h2:hover{
+text-decoration: underline;
+}
 
+.BlogText h2{
+    text-align: center;
+} 
 
 
