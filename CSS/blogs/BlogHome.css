@@ -111,4 +111,18 @@ text-decoration: underline;
     text-align: center;
 } 
 
+@media screen and (max-width: 768px) {
+    .blogContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .containerOne,
+    .containerTwo,
+    .containerThree,
+    .containerFour {
+      width: 70%;
+      margin-left: 150px;
+    }
+  }
 

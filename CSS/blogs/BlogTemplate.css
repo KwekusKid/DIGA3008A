@@ -83,3 +83,19 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+    .firstParagraph,
+    .secondParagraph,
+    .thirdParagraph {
+      max-width: 90%;
+      padding: 0 16px;
+      margin: 16px auto;
+      text-align: left;
+    }
+  
+    .headerImage,
+    .blogText {
+      text-align: center;
+      padding: 0 16px;
+    }
+  }

@@ -81,7 +81,7 @@ body p{
     color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media  (max-width: 768px) {
     #CollapsingMenu {
       font-size: 24px;
       margin-left: 8px;

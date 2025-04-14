@@ -90,5 +90,26 @@
     transform: rotate(180deg);
   }
 
+  @media screen and (max-width: 768px) {
+    .accordion-header {
+      font-size: 20px;
+      padding: 20px;
+    }
+  
+    .accordion-content {
+      grid-template-columns: 1fr; /* Stack images vertically */
+      padding: 8px;
+    }
+  
+    .accordion-content img {
+      width: 100%;
+    }
+  
+    .accordion-container {
+      padding: 10px;
+      max-width: 100%;
+    }
+  }
+
 
   
