@@ -16,35 +16,16 @@ body {
     right: -100%;
     text-decoration: none;
 }
-nav ul{
-    margin: 10px 1350px 5px 5px;
-    
-    text-decoration: none;
 
-
-
-  
-}
 h2{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav ul h2 {
-   
-    font-size: 20px;
-    
-    color:black;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    
-    
-    
-    
-}
+
 
 nav ul a{
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 
@@ -126,7 +107,7 @@ nav ul a:hover{
       right: -100%;
       top: 0;
       width: 100%;
-      background-color: #dbe6d8;
+      background-color: black;
       height: 100vh;
       z-index: 10;
       padding-top: 60px;

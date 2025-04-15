@@ -26,7 +26,7 @@ background-color: black;
 text-transform: uppercase;
 }
 
-.Home:hover{
+#Home:hover{
     color: rgba(0,175,102,255);
 }
 #check:checked~ .NavBar{
