@@ -65,10 +65,23 @@ nav ul a:hover{
     color: white;
     margin:  300px 300px;
     font-size: 30px;
-    
+    text-decoration: none;
    
 
 
+}
+
+.title a{
+    text-decoration: none;
+    color: white
+}
+
+.title a:hover{
+    color: rgba(0,175,102,255);
+}
+
+.name{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
