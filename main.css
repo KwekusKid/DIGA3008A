@@ -132,12 +132,17 @@ body p{
     }
   }
 
-  .footer{
-    color:white;
-     
-  }
+  footer{
+   color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30px 0px;
+    width: 100%; 
+}
 
   .footer p{
+    
     text-align: center;
     font-size: 12px; 
     margin-top: 20px; 

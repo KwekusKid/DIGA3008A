@@ -161,6 +161,31 @@
     max-width: 90%;
   }
 
+  .polaroid {
+    background-color: rgb(91, 122, 94) ;
+    border: 1px solid rgb(91, 122, 94);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: fit-content;
+    padding: 10px 10px 30px 10px;
+    margin: 40px auto;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .polaroid img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .caption {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black ;
+    margin-top: 12px;
+  }
+
   @media screen and (max-width: 768px) {
     .InspirationText p {
       font-size: 16px;
