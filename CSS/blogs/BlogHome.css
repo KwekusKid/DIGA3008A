@@ -13,43 +13,18 @@ nav ul li a{
     color:white;
 }
 
-.containerOne{
+.containerOne, .containerTwo, .containerThree, .containerFour, .containerFive{
     
-    background-color: rgba(244, 243, 243, 0.4);
-    margin: 25px 1000px 25px 30px;
-    border-radius: 5px;
-}
-
-.containerTwo{
     
-    background-color: rgba(244, 243, 243, 0.4);
     margin: 25px 1000px 25px 30px;
     border-radius: 5px;
 }
-
-.containerThree{
-    
-    background-color: rgba(244, 243, 243, 0.4);
-    margin: 25px 1000px 25px 30px;
-    border-radius: 5px;
+.containerOne:hover, .containerTwo:hover, .containerThree:hover, .containerFour:hover, .containerFive:hover{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(254, 254, 254, 0.583);
 }
 
-.containerFour{
-    
-    background-color: rgba(244, 243, 243, 0.4);
-    margin: 25px 1000px 25px 30px;
-    border-radius: 5px;
-
-
-
-}
-
-.containerFive{
-    background-color: rgba(244, 243, 243, 0.4);
-    margin: 25px 1000px 25px 30px;
-    border-radius: 5px;
-}
-
+  
 
 
 
