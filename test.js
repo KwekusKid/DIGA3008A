@@ -1,2 +1,2 @@
 console.log("hi");
-window.alert(hEllO);
+window.alert("hEllO");
