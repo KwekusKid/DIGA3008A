@@ -78,13 +78,13 @@ nav ul li a{
     margin-bottom: 1rem;
 }
 
-.BlogText p{
+/*.BlogText p{
     display: -webkit-box;
     line-clamp: -3;
     -webkit-box-orient:vertical;
     overflow: hidden;
     margin: 0px 0px;
-}
+}*/
 
 .p-summary {
     font-size: 0.9rem;
