@@ -19,7 +19,7 @@ nav ul li a{
     margin: 25px 1000px 25px 30px;
     border-radius: 5px;
 }
-.containerOne:hover, .containerTwo:hover, .containerThree:hover, .containerFour:hover, .containerFive:hover{
+.container:hover{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(254, 254, 254, 0.583);
 }
@@ -58,7 +58,7 @@ nav ul li a{
     padding: 30px;
 }
 
-.blogContainer{
+.blogContainer nav ul{
     display: grid;
     justify-content: center;
     align-items: center;
