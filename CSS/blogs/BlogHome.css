@@ -7,7 +7,7 @@ nav ul li a{
 
 
 .container  {
-    
+     text-decoration: none;
     background-color: #000;
     color: #fff;
     border: 1px solid #333;
@@ -22,13 +22,7 @@ nav ul li a{
     box-shadow: 0 4px 8px rgba(254, 254, 254, 0.583);
 }
 
-.LinkToBlog h2{
-  text-decoration: none;
-}
 
-.LinkToBlog p{
-  text-decoration: none;
-}
 
 
 
