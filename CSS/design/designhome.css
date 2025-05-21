@@ -22,11 +22,9 @@
   }
 
   .Image p{
-    font-size: 20px;
-    margin-top: 8px;
-    padding-top: 8px;
-    text-decoration: none;
-    color: white;
+ margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
   }
 
   .Image a {
