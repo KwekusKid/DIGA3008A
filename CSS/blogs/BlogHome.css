@@ -22,7 +22,11 @@ nav ul li a{
     box-shadow: 0 4px 8px rgba(254, 254, 254, 0.583);
 }
 
-.LinkToBlog{
+.LinkToBlog h2{
+  text-decoration: none;
+}
+
+.LinkToBlog p{
   text-decoration: none;
 }
 
