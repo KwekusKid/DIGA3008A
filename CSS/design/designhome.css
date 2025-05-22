@@ -1,5 +1,5 @@
 
-.ImageContainer {
+/* .ImageContainer {
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
@@ -55,6 +55,43 @@
 .Image:hover{
   border-radius: 10px;
     box-shadow: 0 4px 8px rgba(254, 254, 254, 0.583);
+} */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.section-title {
+  grid-column: span 12;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#LeftSide {
+  grid-column: 1 / span 6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+#RightSide {
+  grid-column: 7 / span 6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.ImageGroup img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.ImageGroup img:hover {
+  transform: scale(1.02);
 }
 
 
