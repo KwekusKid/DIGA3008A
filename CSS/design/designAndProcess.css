@@ -12,7 +12,9 @@
     font-size: 1.3rem;
     margin-bottom: 10px;
     padding-bottom: 5px;
+
     border-bottom: 0.5px solid #ddd;
+    border-bottom-width: 0.5px;
 }
 
 .subcategory {
