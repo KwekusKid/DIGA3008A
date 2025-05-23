@@ -42,6 +42,7 @@
     font-size: 0.9rem;
     background: white;
     border-top: 1px solid #eee; /* Optional separator */
+    
 }
 
 .category h3 {
@@ -62,7 +63,7 @@ border-bottom: 0.5px solid #ddd;
 }
 
 .subcategory {
-   max-block-size: 50%;
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
