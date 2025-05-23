@@ -40,6 +40,11 @@ nav ul li a{
     padding: 30px;
 }
 
+a.LinkToBlog {
+    text-decoration: none;
+    color: inherit;
+}
+
 .blogContainer nav ul {
   text-decoration: none;
     display: grid;

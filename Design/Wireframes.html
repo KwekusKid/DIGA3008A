@@ -3,13 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <meta name="viewport" content="width, initial-scale=1.0">
     <title>DesignandProcess</title>
     <meta name="description" content="Discussions and breakdowns for the design of my website">
     <meta name="author" content="Apayin Odame-Takyi 2601677">
     <link rel="stylesheet" href="../main.css">
+     <script src ="../Javascript/designandProcess.js"></script>
     <link rel="stylesheet" href="../CSS/design/designAndProcess.css">
+
     <script src="https://kit.fontawesome.com/bf38fba464.js" crossorigin="anonymous"></script>
+    
+    
 </head>
 
 <body>
@@ -41,18 +45,16 @@
         <h2 class="TitleOfPage">WIREFRAMES AND DESIGN PROCESS</h2>
     </header>
 
-    <section class="sketches-container">
-     <section class = "lightBoxes">
-        
-     </section>
-
-        <section class="category" onclick="openModal();currentSlide(1)" class="hover-shadow">
 
 
+
+    <section class="MainContainer">
+     
+
+        <section class="category">
             <section class=title>
                 <h3>Sketches</h3>
             </section>
-
 
             <section class="subcategory">
                 <section class="expandable">
@@ -68,8 +70,30 @@
             </section>
         </section>
 
+           <section class="category">
+            <section class=title>
+                <h3>Sketches V2</h3>
+            </section>
 
-        <section class="category" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <section class="subcategory">
+                <section class="expandable">
+                    <section class="caption">
+                        Sketches
+                    </section>
+                    <section class="thumbnail">
+                        <img src="../Images/Wireframes/sketchOfPotentialBlogHomepage.png">
+                    </section>
+
+                </section>
+
+            </section>
+        </section>
+
+      
+
+
+
+        <section class="category">
 
             <section class=title>
                 <h3>Wireframes V1</h3>
@@ -79,7 +103,7 @@
                 <section class="expandable">
 
                     <section class="caption">
-                        Old sketches
+                        Early high fidelity wireframes
                     </section>
 
 
@@ -92,7 +116,7 @@
         </section>
 
 
-        <section class="category" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        <section class="category">
 
             <section class=title>
                 <h3>Wireframes V2</h3>
@@ -101,13 +125,9 @@
             <section class="subcategory">
                 <section class="expandable">
 
-
                     <section class="caption">
-                        Newer wireframes
+                       My most updated Wireframes
                     </section>
-
-
-
 
                     <section class="thumbnail">
                         <img src="../Images/Wireframes/DesignHomeWireframe.png">
@@ -116,43 +136,30 @@
             </section>
         </section>
 
-        <!-- My Lightbox -->
+   </section>
 
-        <section class="Opened" id="boxOpened">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <section class="modal-content">
+      <!-- <section class = "Sketches">
 
-                <section class="myBox">
-                    <img src="../Images/Wireframes/sketchOfPotentialBlogHomepage.png">
-                </section>
-
-
-                <section class="myBox">
-
-                    <img src="../Images/Wireframes/sketchOfPotentialBlogHomepage.png">
-                </section>
-
-                
-                <section class="myBox"> 
-                    <img src="../Images/Wireframes/sketchOfPotentialBlogHomepage.png">
-                </section>
-
-            </section>
-
+        <section class = SketchImage1>
+        <img src="../Images/Wireframes/Wireframe.jpg" alt="Wireframe sketches">
         </section>
 
-         <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <p class = "sketchDescription">
+            Old sketch of wireframe
+        </p>
+     
 
-    <section class="caption-container">
-      <p id="caption"></p>
-    </section>
+      <section class = "SketchImage2">
+        <img src = "../Images/Wireframes/WireframeSkectches2.jpg" alt ="Wireframe skecthes of home collapsing navigation bar">
+      </section>
 
+      <p class = "sketchDescription">
+        Old Sketch of a wireframe
+      </p>
 
+      </section>
 
-
-    </section>
+    
 
 
 

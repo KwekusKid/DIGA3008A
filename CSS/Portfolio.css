@@ -50,10 +50,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 16px;
-    
-   
-    
+
   }
+
+
 
   .accordion-content img{
     width: 40%;
@@ -89,6 +89,26 @@
   .accordion-toggle:checked + .accordion-header .arrow {
     transform: rotate(180deg);
   }
+
+  #lightbox{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+    
+}
+
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
   @media screen and (max-width: 768px) {
     .accordion-header {
