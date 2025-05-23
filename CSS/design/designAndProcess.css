@@ -12,7 +12,8 @@
     flex-direction: column;
     width: 200px; /* Adjust this to your preferred width */
     background: white;
-    border-radius: 5px;
+    
+    
     overflow: hidden; /* Keeps everything contained within the rounded corners */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }

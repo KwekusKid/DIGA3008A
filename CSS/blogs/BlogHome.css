@@ -16,6 +16,11 @@ nav ul li a{
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.container h2, .container p{
+  text-decoration: none;
 }
 .container:hover{
     border-radius: 10px;
@@ -25,11 +30,6 @@ nav ul li a{
 #caption{
   text-decoration: none;
 }
-
-
-
-
-
 
 
 .Blogs{
