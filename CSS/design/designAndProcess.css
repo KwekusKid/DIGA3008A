@@ -62,7 +62,7 @@ border-bottom: 0.5px solid #ddd;
 }
 
 .subcategory {
-   
+   max-block-size: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
