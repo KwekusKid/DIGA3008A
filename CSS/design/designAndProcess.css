@@ -17,7 +17,8 @@
 }
 
 .title{
- border-bottom: 0.5px solid #ddd;
+    border-color: aquamarine;
+
 }
 
 .subcategory {
