@@ -16,6 +16,10 @@
     
 }
 
+.title{
+    max-width: 50%;
+}
+
 .title h3{
 border-bottom: 0.5px solid #ddd;
 }
