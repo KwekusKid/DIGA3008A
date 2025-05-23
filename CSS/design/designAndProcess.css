@@ -18,14 +18,11 @@
 
 .title{
     max-width: 30%;
-    
 }
 
 .title h3{
 border-bottom: 0.5px solid #ddd;
 }
-
-
 
 .subcategory {
     display: flex;
