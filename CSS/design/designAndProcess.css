@@ -1,6 +1,9 @@
 .sketches-container {
-    max-width: 900px;
-    margin: 0 auto;
+   padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .category {
@@ -9,11 +12,11 @@
 
 .expandable {
     display: flex;
+    justify-content: center;
+    align-items:center;
     flex-direction: column;
-    width: 200px; /* Adjust this to your preferred width */
+    padding: 30px;/* Adjust this to your preferred width */
     background: white;
-    
-    
     overflow: hidden; /* Keeps everything contained within the rounded corners */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
