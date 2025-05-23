@@ -7,120 +7,172 @@
     <title>DesignandProcess</title>
     <meta name="description" content="Discussions and breakdowns for the design of my website">
     <meta name="author" content="Apayin Odame-Takyi 2601677">
-    <link rel = "stylesheet" href = "../main.css">
-    <link rel = "stylesheet" href = "../CSS/design/designAndProcess.css">  
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../CSS/design/designAndProcess.css">
     <script src="https://kit.fontawesome.com/bf38fba464.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <input type="checkbox" id="check" hidden>
-        <label for="check"  class = "burger-button" id = "CollapsingMenu" ><i class="fa-solid fa-bars"></i></label>
-    
-        <ul nav class = "NavBar">
-            <a href="../index.html"><h2 id = "Home">APAYIN</h2></a>
-            <a href ="../Blogs/BlogHome.html"><h2>blogs</h2></a>         
-            <a href ="../Design/DesignHomePage.html"><h2>designhome</h2></a>                 
-            <a href = "../Portfolio/Portfolio.html"><h2>portfolio</h2></a>
-            <a href = "../Profile/Profile.html"><h2>profile</h2></a>
-            <a href = "../Essays/Essays.html"><h2>essays</h2></a>
+        <label for="check" class="burger-button" id="CollapsingMenu"><i class="fa-solid fa-bars"></i></label>
+
+        <ul nav class="NavBar">
+            <a href="../index.html">
+                <h2 id="Home">APAYIN</h2>
+            </a>
+            <a href="../Blogs/BlogHome.html">
+                <h2>blogs</h2>
+            </a>
+            <a href="../Design/DesignHomePage.html">
+                <h2>designhome</h2>
+            </a>
+            <a href="../Portfolio/Portfolio.html">
+                <h2>portfolio</h2>
+            </a>
+            <a href="../Profile/Profile.html">
+                <h2>profile</h2>
+            </a>
+            <a href="../Essays/Essays.html">
+                <h2>essays</h2>
+            </a>
             <label for="check" span class="closeNavBar">&times;</span>
         </ul>
-        <h2 class = "TitleOfPage">WIREFRAMES AND DESIGN PROCESS</h2>
+        <h2 class="TitleOfPage">WIREFRAMES AND DESIGN PROCESS</h2>
     </header>
- 
+
     <section class="sketches-container">
-                <section class="category">
-                  
-                      
-                       <section class = title>
-                        <h3>Sketches</h3>
-                       </section>
-                       
-                   
-                    <section class="subcategory">
-                        <section class="expandable">
-                            <section class = "caption">
-                                  Old Sketches
-                            </section>
-                            <section class = "thumbnail">
-                           <img src = "../Images/Wireframes/WireframeSkectches2.jpg">
-                            </thumbnail>
-                          
-                        </section>
-                        
-                    </section>
-                </section>
-                
-                
-                <section class="category">
+     <section class = "lightBoxes">
+        
+     </section>
 
-                       <section class = title>
-                       <h3>Wireframes V1</h3>
-                       </section>
-                   
-                    <section class="subcategory">
-                        <section class="expandable">
+        <section class="category" onclick="openModal();currentSlide(1)" class="hover-shadow">
 
-                             <section class = "caption">
-                                    Old sketches
-                            </section>
-                   
 
-                       <section class = "thumbnail">
-                           <img src = "../Images/Wireframes/HomePageWire.png">
-                            </thumbnail>
-                        </section>
-
-                    </section>
-                    </section>
-                </section>
-                
-                <section class="category">
-
-                     <section class = title>
-                      <h3>Wireframes V2</h3>
-                       </section>
-                    
-                    <section class="subcategory">
-                        <section class="expandable">
-
-                              <section class = "caption">
-                                   Newer wireframes
-                            </section>
-
-                          
-
-                            
-                       <section class = "thumbnail">
-                           <img src = "../Images/Wireframes/DesignHomeWireframe.png">
-                            </thumbnail>
-                        </section>
-                    </section>
-                </section>
-                
-               
+            <section class=title>
+                <h3>Sketches</h3>
             </section>
 
+
+            <section class="subcategory">
+                <section class="expandable">
+                    <section class="caption">
+                        Old Sketches
+                    </section>
+                    <section class="thumbnail">
+                        <img src="../Images/Wireframes/WireframeSkectches2.jpg">
+                    </section>
+
+                </section>
+
             </section>
+        </section>
+
+
+        <section class="category" onclick="openModal();currentSlide(2)" class="hover-shadow">
+
+            <section class=title>
+                <h3>Wireframes V1</h3>
+            </section>
+
+            <section class="subcategory">
+                <section class="expandable">
+
+                    <section class="caption">
+                        Old sketches
+                    </section>
+
+
+                    <section class="thumbnail">
+                        <img src="../Images/Wireframes/HomePageWire.png">
+                    </section>
+                </section>
+
+            </section>
+        </section>
+
+
+        <section class="category" onclick="openModal();currentSlide(2)" class="hover-shadow">
+
+            <section class=title>
+                <h3>Wireframes V2</h3>
+            </section>
+
+            <section class="subcategory">
+                <section class="expandable">
+
+
+                    <section class="caption">
+                        Newer wireframes
+                    </section>
+
+
+
+
+                    <section class="thumbnail">
+                        <img src="../Images/Wireframes/DesignHomeWireframe.png">
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- My Lightbox -->
+
+        <section class="Opened" id="boxOpened">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <section class="modal-content">
+
+                <section class="myBox">
+                    <img src="../Images/Wireframes/sketchOfPotentialBlogHomepage.png">
+                </section>
+
+
+                <section class="myBox">
+
+                    <img src="../Images/Wireframes/sketchOfPotentialBlogHomepage.png">
+                </section>
+
+                
+                <section class="myBox"> 
+                    <img src="../Images/Wireframes/sketchOfPotentialBlogHomepage.png">
+                </section>
+
+            </section>
+
+        </section>
+
+         <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <section class="caption-container">
+      <p id="caption"></p>
+    </section>
+
+
+
 
     </section>
-       
+
+
+
+
+
     </main>
 
-            
-            
-           
 
-           
-            
-                
-            
 
-        
 
-    
-<!-- <p class = "p-summary">This page is a dedicated discussion to my wireframes, possible designs for pages as well as the overall directions and goals I have for this website. As well covers content covered in blog post
+
+
+
+
+
+
+
+
+
+    <!-- <p class = "p-summary">This page is a dedicated discussion to my wireframes, possible designs for pages as well as the overall directions and goals I have for this website. As well covers content covered in blog post
     week 5 and 6
 </p>
 <p>To have a look at my inspiration and style guide, go <a href = "Inspiration.html">here.</a></p>
@@ -235,7 +287,7 @@ field between film, photography and games. I'm leaning towards after the down ar
 </p>
 
   -->
-<!-- <p>
+    <!-- <p>
 
     Profile wireframes and design: Martine rose's website is huge inspiration in terms of where I want my website to go, instead of following the rules 
     of traditional web design, rose forces viewers into her world and makes them get comfortable with that, this is shown best in her about page. Instead of a
@@ -260,11 +312,12 @@ field between film, photography and games. I'm leaning towards after the down ar
 
 </body>
 <footer class="footer">
-       
-    
-    
+
+
+
     <p class="copyright">
         Apayin Bogolo Odame-Takyi (2025). All Rights Reserved.
     </p>
 </footer>
+
 </html>
