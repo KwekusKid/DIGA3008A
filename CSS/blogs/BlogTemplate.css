@@ -23,63 +23,38 @@ body{
     width: 100%;   
 }
 
-.firstParagraph {
-    max-width: 400px; 
-    line-height: 1.6;
-    margin: 20px;
-    margin-left: 590px;
-   
-    
-}
 
-.firstParagraph p{
+
+
+.Paragraph p{
     font-family: 'Times New Roman', Times, serif;
 }
-.firstParagraph h3{
+.Paragraph h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
 
-.firstParagraph p{
-    text-align: left;
-
-}
-
-
-.secondParagraph {
-    max-width: 500px; 
-    line-height: 1.6;
-    margin: 20px 0px;
-    margin-left: 540px;
-   
-}
-
-.secondParagraph p{
-    text-align: left;
-
-}
-
-.secondParagraph h3{
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 
 
-.thirdParagraph{
+
+
+
+.Paragraph{
     max-width: 400px;
     line-height: 1.6;
     margin: 20px 0px;
     margin-left: 590px;
 }
 
-.thirdParagraph p{
+.Paragraph p{
     text-align: left;
 
 }
 
-.thirdParagraph h3{
+.Paragraph h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
