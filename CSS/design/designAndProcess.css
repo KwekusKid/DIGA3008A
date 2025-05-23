@@ -18,7 +18,11 @@
 
 .title{
     max-width: 30%;
-    border-bottom: 0.5px solid #ddd;
+    
+}
+
+.title h3{
+border-bottom: 0.5px solid #ddd;
 }
 
 
