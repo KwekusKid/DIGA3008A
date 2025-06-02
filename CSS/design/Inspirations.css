@@ -138,6 +138,13 @@
     text-align: left;
     padding: center;
   }
+
+  #modal-description img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    align-items: center;
+  }
   
   .close {
     position: absolute;
