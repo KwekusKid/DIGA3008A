@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "BlogWeek13.html"
   ];
 
-  let currentPosition = 0;
+  let currentPage = window.location.pathname.split("/").pop();
+  let currentPosition = pages.indexOf(currentPage);
 
   document.getElementById("prev").addEventListener("click", function () {
     if (currentPosition > 0) {
