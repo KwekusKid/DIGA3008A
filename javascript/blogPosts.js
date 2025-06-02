@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function () {
   // List of actual page names
   const pages = [
     "BlogWeek1.html",
@@ -32,3 +32,5 @@
     // Redirect to the correct page
     window.location.href = pages[currentPosition];
   }
+
+});
