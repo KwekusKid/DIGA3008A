@@ -15,19 +15,26 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentPage = window.location.pathname.split("/").pop();
   let currentPosition = pages.indexOf(currentPage);
 
-  document.getElementById("prev").addEventListener("click", function () {
-    if (currentPosition > 0) {
-      currentPosition--;
-      updateContent();
-    }
-  });
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
 
-  document.getElementById("next").addEventListener("click", function () {
-    if (currentPosition < pages.length - 1) {
-      currentPosition++;
-      updateContent();
-    }
-  });
+  if (prevBtn) {
+    prevBtn.addEventListener("click", function () {
+      if (currentPosition > 0) {
+        currentPosition--;
+        updateContent();
+      }
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", function () {
+      if (currentPosition < pages.length - 1) {
+        currentPosition++;
+        updateContent();
+      }
+    });
+  }
 
   function updateContent() {
     // Redirect to the correct page
