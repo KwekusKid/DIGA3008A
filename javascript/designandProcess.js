@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: 'Sketches',
             description: 'I wanted to achieve a clean look and something that\'s easy to navigate for users...',
             galleryImages: [
-                { src: 'images/sketch1.jpg', description: 'Initial sketch of homepage layout' },
+                { src: '../Images/WireframeSketches/designAndProcessSketch.jpg', description: 'Initial sketch of homepage layout' },
                 { src: 'images/sketch2.jpg', description: 'Wireframe concept for navigation' },
                 { src: 'images/sketch3.jpg', description: 'Mobile version rough sketch' }
             ],
