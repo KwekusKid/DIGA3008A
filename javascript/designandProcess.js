@@ -68,8 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1 class="form-title">${form.title}</h1>
             
             <div class="form-nav">
-                ${form.prevForm ? `<button class="nav-button prev-button" data-target="${form.prevForm}">WireframesV1</button>` : ''}
-                ${form.nextForm ? `<button class="nav-button next-button" data-target="${form.nextForm}">WireFramesV2</button>` : ''}
+                ${form.prevForm ? `<button class="nav-button prev-button" data-target="${form.prevForm}">Next</button>` : ''}
+                ${form.nextForm ? `<button class="nav-button next-button" data-target="${form.nextForm}">Previous</button>` : ''}
             </div>
             
             <div class="form-description">
