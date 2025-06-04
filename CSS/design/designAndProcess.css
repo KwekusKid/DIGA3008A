@@ -70,6 +70,7 @@
     display: flex;
     overflow-x: auto;
     gap: 1rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
@@ -80,7 +81,8 @@
     flex: 0 0 auto;
     width: 160px;
     height: 200px;
-    background-color: #eee;
+    background-color: black;
+      border: 1px solid #333;
     border-radius: 0;
     display: flex
 ;
@@ -93,6 +95,13 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+
+.gallery-item:hover {
+    transform: translateY(-7px); /* Negative value moves element up */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Optional: Adds shadow for "lifting" effect */
+    transition: transform 0.3s ease; /* Smooth transition */
+    cursor: pointer;
 }
 
 /* Hide scrollbar but keep functionality */

@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
             title: 'Sketches',
             description: 'I wanted to achieve a clean look and something that\'s easy to navigate for users... ',
             galleryImages: [
-                { src: '../Images/Wireframes/WireframeSketches/Wireframe.jpg', description: 'This is my very first wireframe, I always wanted vertical spacing and a blocky look related to minimalism', alt: '' },
-                { src: '../Images/Wireframes/WireframeSketches/WireframeSketches2.jpg', description: 'Quick sketeches on what I wanted for my  ' },
-                { src: '../Images/Wireframes/inspirationPageLayoutSketch', description: 'Mobile version rough sketch' },
-                { src: '../Images/Wireframes/WireframeSketches/designAndProcessSketch.jpg', description: 'Mobile version rough sketch' },
-                { src: '../Images/Wirefrmaes/sketchOfPotentialBlogHomepage', description: 'Mobile version rough sketch' },
-                { src: '../Images/Wireframes/SketchofDesignHomePage.jpg', description: 'Mobile version rough sketch' },
+                { src: '../Images/Wireframes/WireframeSketches/Wireframe.jpg', description: 'This is my first wireframe of my Homepage and Blogpage. When going about it I always wanted vertical spacing and a blocky look related to minimalism. I was really invested in the idea of centralized Ui.', alt: 'Picture of a sketch of a wireframe relating to Blogs pages and a Homepage' },
+                { src: '../Images/Wireframes/WireframeSketches/WireframeSketches2.jpg', description: 'I was always interested in the idea of a burger menu in terms of my approach to the interface elements of this site. To explain what I mean, I was always interested in the idea of concealing larger pieces of visual or written content within a title. This is great for allowing pages to have space, a feature I took from my inspirations. All through my website burger menus can be found, my portfolio section is a burger menu, where pictures and games are hidden under title cards, that sleek control of concealing large amount of writing and space has always interested me.', alt:'A wireframe sketch that has 3 squares, each a different page or section of the website, there is a mini home burger menu, title cards for a blog section as well as title cards for a homepage' },
+                { src: '../Images/Wireframes/WireframeSketches/inspirationPageLayoutSketch.jpg', description: 'Ruff sketch that I did to go for a collage for my design section\'s inspiration page, this page has lightbox images with large descriptions and explanations to them. I wanted to put these lightboxes in a collage, however I left the idea due to visual clarity for users', alt:'A sketch done showing boxes in a collage formation'},
+                { src: '../Images/Wireframes/WireframeSketches/designAndProcessSketch.jpg', description: 'This was a concept for how I was going to approach the gallery of portfolio. Having lightbox for each images, they would\'ve split into two rows of pictures that are scrollable.', alt: 'A sketch of two rows of squares being drawn a top of another, at the end of each row there are arrows'},
+                { src: '../Images/Wireframes/WireframeSketches/sketchOfPotentialBlogHomepage.png', description: 'This was heavily inspired by the UI layout of the new yorker, using a bold title card referencing their latest piece. I looked at this design a possible approach to pursue. I found it still aligned with the minimalistic look I wanted, while still presenting the experience of a blog page or at least a page dedicated to large bodies of written work.', alt: 'Sketch box sketching arranging the content of the pages into different sized squares and rectangles' },
+                { src: '../Images/Wireframes/WireframeSketches/SketchofDesignHomePage.jpg', description: 'I wanted to implement this design for my design section homepage. I wanted the images around each title to do 2 things, first give users a quick understanding of the content they\'ll find on the page they\'ll click one. Second, to visually lead viewers to the title which they should click to take them to the next page.', alt: 'A title page sketched out wireframe where in which two titles are split apart vertically and each title is surrounded by its own collage'},
                 
               
             ],
@@ -23,9 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
             title: 'Wireframes v1',
             description: 'Description for Wireframes version 1...',
             galleryImages: [
-                { src: 'images/wireframe1-1.jpg', description: 'First iteration homepage' },
-                { src: 'images/wireframe1-2.jpg', description: 'Navigation structure v1' },
-                { src: 'images/wireframe1-3.jpg', description: 'Content section wireframe' }
+                { src: '../Images/WireframeV1/HomePageWireframe.png', description: 'First iteration homepage' },
+                { src: '../Images/WireframeV1/HomePageWire.png', description: 'Navigation structure v1' },
+                { src: '../Images/WireframeV1/HomePageWiretwo.png', description: 'Content section wireframe' },
+                {src: '../Images/WireframeV1/BlogsWireframe1.png' , description: ''},
+                {src: '../Images/WireframeV1/BlogsWireframelightbox.png' , description: '', alt: ''},
+                {src: '../Images/WireframeV1/PortfolioWireframe_1.png' , description: '', alt: ''},
+                 {src: '../Images/WireframeV1/PortfolioWireframe2.png' , description: '', alt: ''},
+                  {src: '../Images/WireframeV1/PortfolioWireframe_3.png' , description: '', alt: ''}
             ],
             prevForm: 'sketches',
             nextForm: 'wireframes-v2'
