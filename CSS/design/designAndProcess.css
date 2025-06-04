@@ -9,24 +9,23 @@
    background-color: black;
     border-radius: 1px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
+    padding: 3rem;
     margin-top: 1rem;
 }
 
 .form-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+     font-size: 1.5rem;       /* Adjust to make text smaller (e.g., 1.25rem) */
+    margin: 1rem auto 2rem;  /* ↑ Top margin to raise position | ↔ Auto centers */
     border-bottom: 1px solid #eee;
-    padding-bottom: 1rem;
-    width: fit-content;
-    align-items: center;
+    padding-bottom: 0.5rem;    /* Reduced from 2rem to shrink space under text */
+    width: fit-content;      /* Ensures box shrinks to content width */
+    text-align: center; 
 }
 
 .form-nav {
     display: flex;
-  
     margin-bottom: 2rem;
-     flex-wrap: wrap; /* Allows items to wrap if needed */
+    flex-wrap: wrap; /* Allows items to wrap if needed */
     flex-direction: row; /* Makes items align horizontally (default) */
     /* Optional: Adjust alignment if needed */
     align-items: center;
@@ -35,17 +34,20 @@
 }
 
 .nav-button {
+    font-family: 'Times New Roman', Times, serif;
     padding: 0.5rem 1rem;
-    
-    background-color: #eee;
-    border: none;
-    border-radius: 4px;
+    color: white;
+    background-color: black;
+    border: 1px solid #333;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .nav-button:hover {
-    background-color: #ddd;
+    color:black;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.583);
 }
 
 .nav-button.active {
@@ -54,8 +56,9 @@
 }
 
 .form-description {
-    margin-bottom: 2rem;
+    margin-bottom: 15rem;
     line-height: 1.6;
+     text-align: center; 
 }
 
 /* Gallery styles */
@@ -73,13 +76,14 @@
 }
 
 .gallery-item {
-    scroll-snap-align: start;
+  scroll-snap-align: start;
     flex: 0 0 auto;
-    width: 300px;
+    width: 160px;
     height: 200px;
     background-color: #eee;
-    border-radius: 4px;
-    display: flex;
+    border-radius: 0;
+    display: flex
+;
     align-items: center;
     justify-content: center;
     position: relative;

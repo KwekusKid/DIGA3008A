@@ -4,11 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             id: 'sketches',
             title: 'Sketches',
-            description: 'I wanted to achieve a clean look and something that\'s easy to navigate for users...',
+            description: 'I wanted to achieve a clean look and something that\'s easy to navigate for users... ',
             galleryImages: [
-                { src: '../Images/WireframeSketches/designAndProcessSketch.jpg', description: 'Initial sketch of homepage layout' },
-                { src: 'images/sketch2.jpg', description: 'Wireframe concept for navigation' },
-                { src: 'images/sketch3.jpg', description: 'Mobile version rough sketch' }
+                { src: '../Images/Wireframes/WireframeSketches/Wireframe.jpg', description: 'This is my very first wireframe, I always wanted vertical spacing and a blocky look related to minimalism', alt: '' },
+                { src: '../Images/Wireframes/WireframeSketches/WireframeSketches2.jpg', description: 'Quick sketeches on what I wanted for my  ' },
+                { src: '../Images/Wireframes/inspirationPageLayoutSketch', description: 'Mobile version rough sketch' },
+                { src: '../Images/Wireframes/WireframeSketches/designAndProcessSketch.jpg', description: 'Mobile version rough sketch' },
+                { src: '../Images/Wirefrmaes/sketchOfPotentialBlogHomepage', description: 'Mobile version rough sketch' },
+                { src: '../Images/Wireframes/SketchofDesignHomePage.jpg', description: 'Mobile version rough sketch' },
+                
+              
             ],
             prevForm: null,
             nextForm: 'wireframes-v1'
@@ -68,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1 class="form-title">${form.title}</h1>
             
             <div class="form-nav">
-                ${form.prevForm ? `<button class="nav-button prev-button" data-target="${form.prevForm}">Next</button>` : ''}
-                ${form.nextForm ? `<button class="nav-button next-button" data-target="${form.nextForm}">Previous</button>` : ''}
+                ${form.prevForm ? `<button class="nav-button prev-button" data-target="${form.prevForm}">Previous</button>` : ''}
+                ${form.nextForm ? `<button class="nav-button next-button" data-target="${form.nextForm}">Next</button>` : ''}
             </div>
             
             <div class="form-description">
