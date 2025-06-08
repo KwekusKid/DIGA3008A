@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { src: '../Images/Wireframes/WireframeSketches/designAndProcessSketch.jpg', description: 'This was a concept for how I was going to approach the gallery of portfolio. Having lightbox for each images, they would\'ve split into two rows of pictures that are scrollable.', alt: 'A sketch of two rows of squares being drawn a top of another, at the end of each row there are arrows'},
                 { src: '../Images/Wireframes/WireframeSketches/sketchOfPotentialBlogHomepage.png', description: 'This was heavily inspired by the UI layout of the new yorker, using a bold title card referencing their latest piece. I looked at this design a possible approach to pursue. I found it still aligned with the minimalistic look I wanted, while still presenting the experience of a blog page or at least a page dedicated to large bodies of written work.', alt: 'Sketch box sketching arranging the content of the pages into different sized squares and rectangles' },
                 { src: '../Images/Wireframes/WireframeSketches/SketchofDesignHomePage.jpg', description: 'I wanted to implement this design for my design section homepage. I wanted the images around each title to do 2 things, first give users a quick understanding of the content they\'ll find on the page they\'ll click one. Second, to visually lead viewers to the title which they should click to take them to the next page.', alt: 'A title page sketched out wireframe where in which two titles are split apart vertically and each title is surrounded by its own collage'},
+                {src: '../Images/Wireframes/WireframeSketches/sketchOfDesignandProcess.jpg', description: 'My last sketch, this was my wireframe for this page, my goal was to fit both large amounts of written content alongside visuals while still maintaining space and a minimalistic design', alt: 'A picture of sketch with the word SKETCHES at the top, underlined with. There are 5 squares and a block called description under the title.'}
                 
               
             ],
@@ -21,16 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             id: 'wireframes-v1',
             title: 'Wireframes v1',
-            description: 'Description for Wireframes version 1...',
+            description: 'A small series of wireframes made using Canva. These are my first attempts at high fidelity wireframes, theres a wireframe for every main page throughout the website.',
             galleryImages: [
-                { src: '../Images/WireframeV1/HomePageWireframe.png', description: 'First iteration homepage' },
-                { src: '../Images/WireframeV1/HomePageWire.png', description: 'Navigation structure v1' },
-                { src: '../Images/WireframeV1/HomePageWiretwo.png', description: 'Content section wireframe' },
-                {src: '../Images/WireframeV1/BlogsWireframe1.png' , description: ''},
-                {src: '../Images/WireframeV1/BlogsWireframelightbox.png' , description: '', alt: ''},
-                {src: '../Images/WireframeV1/PortfolioWireframe_1.png' , description: '', alt: ''},
-                 {src: '../Images/WireframeV1/PortfolioWireframe2.png' , description: '', alt: ''},
-                  {src: '../Images/WireframeV1/PortfolioWireframe_3.png' , description: '', alt: ''}
+                { src: '../Images/Wireframes/WireframeV1/HomePageWireframe.png', description: 'My first wireframe done in canva and my first attempt at a high fidelity wireframe. The centralized and vertical designs had followed me through from my earlier sketches. I was really interested in these arrows pointing from the titles and these arrows would work with page transitions.', alt: 'High fidelity wireframe for a home page, showing the titles BLOGS, DESIGN, ESSAY, PORTFOLIO and PROFILE'},
+                { src: '../Images/Wireframes/WireframeV1/HomePageWire.png', description: 'A high fidelity wireframe of my design section home page, I always wanted a visual to represent each titles content.', alt: 'Two squares vertically split along a page with the title DESIGNS' },
+                { src: '../Images/Wireframes/WireframeV1/HomePageWiretwo.png', description: 'This was me showing how my main navigation would be, using a home icon with an down arrow next to it, users would then have quick and easy access as to different pages across the website. I didn\'t end up going with this navigation due to how much space the home icon would take as well I didn\'t think the iconography went well with my sites overall visual design.', alt: 'High fidelity wireframe of design home with a home icon opened up in the top left corner'},
+                {src: '../Images/Wireframes/WireframeV1/BlogsWireframe1.png' , description: 'When going about this blogs main page, I took a lot of inspiration from Martine Rose\'s about page column structure. I found this structure aesthetically please but I was later advised it wouldn\'t be great for readability', alt: 'High fidelity wireframe of my blog home page, each piece of content is divided up in parallel rectangles'},
+                {src: '../Images/Wireframes/WireframeV1/BlogsWireframelightbox.png' , description: 'I originally wanted all my blogs to be on one page and accessed through a light box. I couldn\'t do this because of just how much content that would be on that one page, this wouldn\'t be ethical design, considering user with a slower internet speed.', alt: 'This high fidelity wireframe showing how lightboxes would work for the contents of my blog page'},
+                {src: '../Images/Wireframes/WireframeV1/PortfolioWireframe_1.png' , description: 'The first wireframe I did of my portfolio. The vertically split line separating title and works is an idea I took from different different magazines layout', alt: 'High fidelity wireframe of a portfolio page, it has the title of WORKS split vertically by a thin line and to the right of the title 3 sections named photography, games and film'},
+                {src: '../Images/Wireframes/WireframeV1/PortfolioWireframe2.png' , description: 'This how it would look if users opened one of the sections of works. the furthest option from the one opened would go off screen, giving more room for the opened content', alt: 'High fidelity wireframe of portfolio page\'s navigation options all opened'},
+                {src: '../Images/Wireframes/WireframeV1/PortfolioWireframe_3.png' , description: 'I tried to copy Martine Rose\'s about page here. Similar to old newspaper in terms of its column layout. I didn\'t end up going with this due to readability however', alt: 'High fedility wireframe of my about page'}
+               
+
             ],
             prevForm: 'sketches',
             nextForm: 'wireframes-v2'
@@ -40,9 +43,15 @@ document.addEventListener("DOMContentLoaded", function () {
             title: 'Wireframes v2',
             description: 'Description for Wireframes version 2...',
             galleryImages: [
-                { src: 'images/wireframe2-1.jpg', description: 'Refined homepage layout' },
-                { src: 'images/wireframe2-2.jpg', description: 'Improved navigation flow' },
-                { src: 'images/wireframe2-3.jpg', description: 'Final content section' }
+                { src: '../Images/Wireframes/WireframeV2/BlogHomeWireframe.png', description: 'I wanted to update my blog home page, I found it\'s old design was inconsistent and left a lot of negative space', alt: 'Bloghome page where each blog is in a block in this two row column' },
+
+                { src: '../Images/Wireframes/WireframeV2/designandProcessV2.png', description: 'This is the wireframe for the design and process page. This format needed to be able hold large pieces of content as well as several related visuals.', alt: 'A high fidelity wireframe with the title sketches, two buttons under the title as well as a caption. At the button, a mini gallery' },
+
+                { src: '../Images/Wireframes/WireframesV2/DesignandProcessWireframe.png', description: 'This was the original design I had planned for the design and process page. I considers containers for each image that would open up a scrollable lightbox that contains, inspirations for wireframes as well as my thought process about what interactive elements would I think about using.', alt: 'Rectangle shaped coloumns holding different pieces of content'},
+
+                { src: '../Images/Wireframes/WireframesV2/DesignHomeWireframe.png', description: 'I was struggling with filling the space when it came to a page only dedicated to two titles. I\'ve decided to scrap this page completely because it didn\'t have a function.', alt: 'High fedelity wireframe showing two collages surrounding titles'},
+
+                { src: '../Images/Wireframes/WireframesV2/PortfolioWireframe.png', description: 'My original galllery had issues of users not being able to see pictures well, they were small and couldn\'t be zoomed into. This layout fixed that and with each picture in the photography gallery, users can open a lightbox describing each image.', alt: 'High fidelity wireframe of a portfolio page, sectioned by the titles, games, photography and film.'}
             ],
             prevForm: 'wireframes-v1',
             nextForm: null
@@ -90,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="gallery" id="gallery-${form.id}">
                     ${form.galleryImages.map((img, index) => `
                         <div class="gallery-item" data-index="${index}">
-                            <img src="${img.src}" alt="${form.title} image">
+                            <img src="${img.src}" alt="${img.alt} image">
                         </div>
                     `).join('')}
                 </div>
@@ -149,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateLightbox() {
         const imageData = currentFormImages[currentLightboxIndex];
         lightboxImage.src = imageData.src;
-        lightboxImage.alt = forms[currentFormIndex].title + ' image ' + (currentLightboxIndex + 1);
+        lightboxImage.alt = forms[currentFormIndex].galleryImages.alt + ' image ' + (currentLightboxIndex + 1);
         lightboxDesc.textContent = imageData.description;
     }
 
