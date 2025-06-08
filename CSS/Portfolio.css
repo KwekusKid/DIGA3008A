@@ -51,31 +51,33 @@
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     gap: 16px;
-   
+  
 
   }
 
   #photography {
-    display: flex;
-    flex-wrap: nowrap;
+     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2rem;
+    padding: 1rem;
+    width: 100%;
    
   }
 
-
+#photography div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
   .accordion-content img{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    scroll-snap-align: center;
-    width: 160px;
-    height: 200px;
+   max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust as needed */
+    object-fit: contain;
     background-color: black;
     border: 1px solid #333;
-    border-radius: 0;
-    align-items: center;
-    position: relative;
+    transition: transform 0.3s ease;
   }
 
   .accordion-content img:hover{
