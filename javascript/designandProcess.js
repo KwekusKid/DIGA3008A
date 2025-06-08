@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             id: 'sketches',
             title: 'Sketches',
-            description: 'I wanted to achieve a clean look and something that\'s easy to navigate for users... ',
+            description: ' ',
             galleryImages: [
                 { src: '../Images/Wireframes/WireframeSketches/Wireframe.jpg', description: 'This is my first wireframe of my Homepage and Blogpage. When going about it I always wanted vertical spacing and a blocky look related to minimalism. I was really invested in the idea of centralized Ui.', alt: 'Picture of a sketch of a wireframe relating to Blogs pages and a Homepage' },
                 { src: '../Images/Wireframes/WireframeSketches/WireframeSketches2.jpg', description: 'I was always interested in the idea of a burger menu in terms of my approach to the interface elements of this site. To explain what I mean, I was always interested in the idea of concealing larger pieces of visual or written content within a title. This is great for allowing pages to have space, a feature I took from my inspirations. All through my website burger menus can be found, my portfolio section is a burger menu, where pictures and games are hidden under title cards, that sleek control of concealing large amount of writing and space has always interested me.', alt:'A wireframe sketch that has 3 squares, each a different page or section of the website, there is a mini home burger menu, title cards for a blog section as well as title cards for a homepage' },
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 {src: '../Images/Wireframes/WireframeV1/BlogsWireframelightbox.png' , description: 'I originally wanted all my blogs to be on one page and accessed through a light box. I couldn\'t do this because of just how much content that would be on that one page, this wouldn\'t be ethical design, considering user with a slower internet speed.', alt: 'This high fidelity wireframe showing how lightboxes would work for the contents of my blog page'},
                 {src: '../Images/Wireframes/WireframeV1/PortfolioWireframe_1.png' , description: 'The first wireframe I did of my portfolio. The vertically split line separating title and works is an idea I took from different different magazines layout', alt: 'High fidelity wireframe of a portfolio page, it has the title of WORKS split vertically by a thin line and to the right of the title 3 sections named photography, games and film'},
                 {src: '../Images/Wireframes/WireframeV1/PortfolioWireframe2.png' , description: 'This how it would look if users opened one of the sections of works. the furthest option from the one opened would go off screen, giving more room for the opened content', alt: 'High fidelity wireframe of portfolio page\'s navigation options all opened'},
-                {src: '../Images/Wireframes/WireframeV1/PortfolioWireframe_3.png' , description: 'I tried to copy Martine Rose\'s about page here. Similar to old newspaper in terms of its column layout. I didn\'t end up going with this due to readability however', alt: 'High fedility wireframe of my about page'}
+                {src: '../Images/Wireframes/WireframeV1/ProfileWireframe_3.png' , description: 'I tried to copy Martine Rose\'s about page here. Similar to old newspaper in terms of its column layout. I didn\'t end up going with this due to readability however', alt: 'High fedility wireframe of my about page'}
                
 
             ],
@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 { src: '../Images/Wireframes/WireframeV2/designandProcessV2.png', description: 'This is the wireframe for the design and process page. This format needed to be able hold large pieces of content as well as several related visuals.', alt: 'A high fidelity wireframe with the title sketches, two buttons under the title as well as a caption. At the button, a mini gallery' },
 
-                { src: '../Images/Wireframes/WireframesV2/DesignandProcessWireframe.png', description: 'This was the original design I had planned for the design and process page. I considers containers for each image that would open up a scrollable lightbox that contains, inspirations for wireframes as well as my thought process about what interactive elements would I think about using.', alt: 'Rectangle shaped coloumns holding different pieces of content'},
+                { src: '../Images/Wireframes/WireframeV2/DesignandProcessWireframe.png', description: 'This was the original design I had planned for the design and process page. I considers containers for each image that would open up a scrollable lightbox that contains, inspirations for wireframes as well as my thought process about what interactive elements would I think about using.', alt: 'Rectangle shaped coloumns holding different pieces of content'},
 
-                { src: '../Images/Wireframes/WireframesV2/DesignHomeWireframe.png', description: 'I was struggling with filling the space when it came to a page only dedicated to two titles. I\'ve decided to scrap this page completely because it didn\'t have a function.', alt: 'High fedelity wireframe showing two collages surrounding titles'},
+                { src: '../Images/Wireframes/WireframeV2/DesignHomeWireframe.png', description: 'I was struggling with filling the space when it came to a page only dedicated to two titles. I\'ve decided to scrap this page completely because it didn\'t have a function.', alt: 'High fedelity wireframe showing two collages surrounding titles'},
 
-                { src: '../Images/Wireframes/WireframesV2/PortfolioWireframe.png', description: 'My original galllery had issues of users not being able to see pictures well, they were small and couldn\'t be zoomed into. This layout fixed that and with each picture in the photography gallery, users can open a lightbox describing each image.', alt: 'High fidelity wireframe of a portfolio page, sectioned by the titles, games, photography and film.'}
+                { src: '../Images/Wireframes/WireframeV2/PortfolioWireframe.png', description: 'My original galllery had issues of users not being able to see pictures well, they were small and couldn\'t be zoomed into. This layout fixed that and with each picture in the photography gallery, users can open a lightbox describing each image.', alt: 'High fidelity wireframe of a portfolio page, sectioned by the titles, games, photography and film.'}
             ],
             prevForm: 'wireframes-v1',
             nextForm: null
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (gallery && form.nextForm) {
             gallery.addEventListener('scroll', function() {
                 const scrollPercentage = (gallery.scrollLeft + gallery.clientWidth) / gallery.scrollWidth;
-                if (scrollPercentage > 0.8) {
+                if (scrollPercentage > 1.2) {
                     const nextFormIndex = forms.findIndex(f => f.id === form.nextForm);
                     if (nextFormIndex !== -1) {
                         currentFormIndex = nextFormIndex;
