@@ -4,6 +4,7 @@
     padding: 5px;
     display: flex; /* Use flexbox for block-level children */
     flex-direction: column;
+   
     align-items: center; /* Centers children horizontally */
 
   }
@@ -15,12 +16,14 @@
   }
   
   .accordion-item {
-    margin-bottom: 3px;
+    margin-bottom: 4px;
+   
 
   }
 
   .accordion-item:hover h3{
     text-decoration: underline;
+    
   }
   
   .accordion-header {
@@ -32,15 +35,13 @@
     padding: 32px;
     font-size: 24px;
     font-weight: bold;
-    display: flex;
+   
     justify-content: space-between;
     cursor: pointer;
   }
   
   .accordion-header:hover {
     background: none;
-  
-   
   }
   
   .accordion-content {
@@ -83,15 +84,7 @@
     padding: 16px;
   }
   
-  .arrow {
-    
-    color: white;
-    font-size: 24px;
-    transition: transform 0.3s ease;
-  }
-  .accordion-toggle:checked + .accordion-header .arrow {
-    transform: rotate(180deg);
-  }
+
 
   #lightbox{
     position: fixed;
