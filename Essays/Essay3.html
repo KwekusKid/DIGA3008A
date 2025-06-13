@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection on final website</title>
+    <meta name="description" content="A critical reflection on the development of my portfolio website">
+    <meta name="author" content="Apayin Odame- Takyi 2601677">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/blogs/BlogTemplate.css">
+    <script src="https://kit.fontawesome.com/bf38fba464.js" crossorigin="anonymous"></script>
+    <script src="../javascript/Essays.js"></script>
+    <link rel="stylesheet" href="CSS/LightAndDarkMode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../javascript/main.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <input type="checkbox" id="check" hidden>
+        <label for="check" class="burger-button" id="CollapsingMenu"><i class="fa-solid fa-bars"></i></label>
+
+        <ul nav class="NavBar">
+            <a href="../index.html">
+                <h2 id="Home">APAYIN</h2>
+            </a>
+            <a href="../Blogs/BlogHome.html">
+                <h2>blogs</h2>
+            </a>
+            <a href="../Design/DesignHomePage.html">
+                <h2>design</h2>
+            </a>
+            <a href="../Portfolio/Portfolio.html">
+                <h2>portfolio</h2>
+            </a>
+            <a href="../Profile/Profile.html">
+                <h2>profile</h2>
+            </a>
+            <a href="../Essays/Essays.html">
+                <h2>essays</h2>
+            </a>
+            <button id="themeToggle" aria-label="Toggle light/dark mode">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <label for="check" span class="closeNavBar">&times;</span>
+        </ul>
+
+    </header>
+
+    <section class="headerImage">
+        <img src="../Images/HomePage.png" alt="A screenshot of my homepage with the word Apayin" class="Thumbnail">
+
+    </section>
+    <section class="blogText">
+        <h2 class="p-name">Reflection on final website</h2>
+
+        <section class="Paragraph">
+            <h2>
+                Reflective Essay: Building an Editorial-Inspired Minimalist Web Architecture
+            </h2>
+        </section>
+        <section class="Paragraph">
+            <div class="divider"></div>
+            <p>
+                The design and development of my website for this website was guided by a blend of technical rigor and
+                visual minimalism, inspired by avant-garde fashion websites like Martine Rose and Wales Bonner, as well
+                as
+                editorial platforms such as The New Yorker, MUBI, and Frank Ocean’s Homer. These influences shaped both
+                the
+                visual aesthetic, clean, minimal, spacious, and the underlying structure, which prioritizes clarity,
+                modularity, and accessibility. I want my website to be a balance between an experience and a functional
+                website that it’s to navigate and one that exemplifies good practice. Majority of my UI and UX decisions
+                were made as result of this goal.
+            </p>
+            <div class="divider"></div>
+        </section>
+
+        <section class="Paragraph">
+            <h2>Folder Structure</h2>
+        </section>
+
+        <section class="Paragraph">
+            <p>
+                The folder structure of my project reflects a clear hierarchical information architecture. Root-level
+                folders such as CSS, javascript, Images, Portfolio, and Profile are designed to separate concerns and
+                promote modular scalability. HTML files (like index.html) sit at the root, representing the structural
+                content layer. CSS files (e.g., index.css, normalize.css) handle the presentation layer, while
+                JavaScript
+                logic is isolated in its own directory. This modularity supports both long-term maintainability and
+                team-based scaling, aligning with industry-standard best practices.
+            </p>
+            <div class="divider"></div>
+        </section>
+
+        <section class="Paragraph">
+            <h2>Semantic Markup</h2>
+        </section>
+
+        <section class="Paragraph">
+            <div class="divider"></div>
+            <p>
+                In crafting the HTML, I prioritized semantic structure to enhance both usability and accessibility.
+                Elements like
+                header, nav, main, and section provide clear landmarks for screen readers and improve browser
+                interpretation of the content. Interface elements, such as navigation links and content
+                blocks, are expressed using appropriate semantic tags. For example, project showcases within
+                the portfolio section are structured with article and figure where appropriate,
+                communicating meaning beyond mere layout. Semantic markup here improves keyboard
+                navigation, search engine indexing, and accessibility, particularly for users
+                relying on assistive technologies.
+            </p>
+            <div class="divider"></div>
+        </section>
+
+        <section class="Paragraph">
+            <h2>Metadata</h2>
+        </section>
+
+        <section class="Paragraph">
+            <div class="divider"></div>
+            <p>
+                Each page includes descriptive metadata, including
+                meta charset="UTF-8" and
+                *meta name="viewport" for responsive scaling. Metadata such as page descriptions, keywords, and titles
+                guide browser rendering and inform SEO, ensuring that the content is discoverable and correctly
+                displayed across devices. As the site evolves, metadata will also help structure new content types
+                within the Blogs or Essays directories.
+            </p>
+            <div class="divider"></div>
+        </section>
+
+        <section class="Paragraph">
+            <h2>CSS</h2>
+        </section>
+        <section class="Paragraph">
+            <div class="divider"></div>
+            <p>
+                All styling is externalized via modular CSS files. This ensures consistency across pages and avoids
+                in-line styling, which would compromise maintainability. The design employs a grid-based layout, subtle
+                typography, and editorial spacing that evoke the clean aesthetic of avant-garde design. Responsiveness
+                is achieved through @media queries, ensuring the site adapts to various screen sizes, from desktop to
+                mobile, while preserving its minimal aesthetic. The use of normalize.css further ensures baseline
+                consistency across browsers.
+            </p>
+            <div class="divider"></div>
+        </section>
+
+        <section class="Paragraph">
+            <h2>JavaScript</h2>
+        </section>
+
+        <section class="Paragraph">
+            <div class="divider"></div>
+            <p>
+                While interactivity is minimal, consistent with the site's editorial tone, any interaction points (e.g.,
+                toggling menus, content filtering) are handled via external JS files. DOM manipulation and event
+                handling are used to keep the logic layer separate and maintain a clean HTML structure. No in-line
+                scripts are used, and asynchronous loading techniques are planned for future media-heavy additions to
+                enhance performance and user experience.
+            </p>
+            <div class="divider"></div>
+        </section>
+
+        <section class="Paragraph">
+            <h2>Conclusion</h2>
+        </section>
+
+        <section class="Paragraph">
+            <div class="divider"></div>
+            <p>
+                The final product reflects a careful negotiation between form and function. The minimalist visual
+                design, borrowed from avant-garde and editorial aesthetics, works in tandem with a robust modular
+                architecture that separates content, presentation, and logic. Semantic markup, metadata, and
+                accessibility considerations ensure the site isn’t just visually appealing but also usable, adaptable,
+                and inclusive. This site isn’t just a personal portfolio—it’s a reflection of how digital spaces can be
+                both intentional and expansive, structured and expressive.
+            </p>
+            <div class="divider"></div>
+        </section>
+
+
+
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>
