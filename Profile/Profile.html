@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <meta name="description" content="My profile page that looks at my character and work experience">
     <meta name="author" content="Apayin Odame- Takyi 2601677">
-    <link rel = "stylesheet" href = "../CSS/Profile.css"> 
-    <link rel = "stylesheet" href = "../main.css">
+    <link rel="stylesheet" href="../CSS/Profile.css">
+    <link rel="stylesheet" href="../main.css">
     <script src="https://kit.fontawesome.com/bf38fba464.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/LightAndDarkMode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../javascript/main.js"></script>
 </head>
+
 <body>
-   <header>
-    <input type="checkbox" id="check" hidden>
-    <label for="check"  class = "burger-button" id = "CollapsingMenu" ><i class="fa-solid fa-bars"></i></label>
+    <header>
+        <input type="checkbox" id="check" hidden>
+        <label for="check" class="burger-button" id="CollapsingMenu"><i class="fa-solid fa-bars"></i></label>
 
-    <ul nav class = "NavBar">
-        <a href="../index.html"><h2 id = "Home">APAYIN</h2></a>
-        <a href ="../Blogs/BlogHome.html"><h2>blogs</h2></a>         
-       <a href ="../Blogs/BlogHome.html"><h2>design</h2></a> 
-        <a href = "../Portfolio/Portfolio.html"><h2>portfolio</h2></a>
-      <h2>profile</h2>
-        <a href = "../Essays/Essays.html"><h2>essays</h2></a>
-        <label for="check" span class="closeNavBar">&times;</span>
-        
-    </ul>
+        <ul nav class="NavBar">
+            <a href="../index.html">
+                <h2 id="Home">APAYIN</h2>
+            </a>
+            <a href="../Blogs/BlogHome.html">
+                <h2>blogs</h2>
+            </a>
+            <a href="../Blogs/BlogHome.html">
+                <h2>design</h2>
+            </a>
+            <a href="../Portfolio/Portfolio.html">
+                <h2>portfolio</h2>
+            </a>
+            <h2>profile</h2>
+            <a href="../Essays/Essays.html">
+                <h2>essays</h2>
+            </a>
+            <button id="themeToggle" aria-label="Toggle light/dark mode">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <label for="check" span class="closeNavBar">&times;</span>
 
-   </header>
-<section class ="aboutPage">
-    
-    <img src = "../Images/Photography/ProfilePicture.JPG" alt = "Apayin Bogolo Odame-Takyi">
-    <h3 class = "p-name">APAYIN BOGOLO ODAME-TAKYI IS AN ARTIST OUT OF JOBURG WEST</h3>
-    <p>I am an artist whose crafts include video game design, web design and photography. I'm currently studying at the University of the Witwatersrand, in my third year as BA in Digital Arts.
-         I am majoring in Game Design and Interactive Media. I aim to tell stories across different medias, stories close to both my Tswana and Ghanian roots.
-        The translation of my identity and my expressions hold the highest importance to me when it comes to going about any venture I pursue. I bring a strong foundation in creative direction, complemented by entry-level coding skills in C#, C++, JavaScript, and HTML.
-         I am actively seeking opportunities in the field of art direction, where I can combine my creative vision with technical understanding to contribute to compelling visual and interactive experiences.
-            </p> 
+        </ul>
 
-</section>
+    </header>
+    <section class="aboutPage">
+
+        <img src="../Images/Photography/ProfilePicture.JPG" alt="Apayin Bogolo Odame-Takyi">
+        <h3 class="p-name">APAYIN BOGOLO ODAME-TAKYI IS AN ARTIST OUT OF JOBURG WEST</h3>
+        <p>I am an artist whose crafts include video game design, web design and photography. I'm currently studying at
+            the University of the Witwatersrand, in my third year as BA in Digital Arts.
+            I am majoring in Game Design and Interactive Media. I aim to tell stories across different medias, stories
+            close to both my Tswana and Ghanian roots.
+            The translation of my identity and my expressions hold the highest importance to me when it comes to going
+            about any venture I pursue. I bring a strong foundation in creative direction, complemented by entry-level
+            coding skills in C#, C++, JavaScript, and HTML.
+            I am actively seeking opportunities in the field of art direction, where I can combine my creative vision
+            with technical understanding to contribute to compelling visual and interactive experiences.
+        </p>
+
+    </section>
 
 </body>
 <footer class="footer">
-       
-    
-    
+
+
+
     <p class="copyright">
         Apayin Bogolo Odame-Takyi (2025). All Rights Reserved.
     </p>
 </footer>
+
 </html>

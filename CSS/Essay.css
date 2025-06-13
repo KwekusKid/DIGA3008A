@@ -1,11 +1,11 @@
 .blogText{
     padding: center;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--text-color)
 }
 body{
-    background-color: black;
+    background-color: var(--bg-color);
 }
 
 .headerImage{
@@ -18,7 +18,7 @@ body{
 
 .divider{
     border: none;
-    border-top: 1px solid #ccc; 
+    border-top: 1px solid (var(--text-color) 0,3); 
     margin: 32px 0;             
     width: 100%;   
 }

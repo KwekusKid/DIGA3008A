@@ -1,14 +1,14 @@
 body{
- background-color: black;
+ background-color: var(--bg-color);
 }
 
 body p{
-    color: white;
+    color: var(--text-color);
     font-family: 'Times New Roman', Times, serif;
 }
 
 body h3{
-    color: white;
+    color: var(--text-color);
 }
 
 

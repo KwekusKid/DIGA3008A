@@ -6,6 +6,10 @@ body.gallery-scrolling {
     width: 100%;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 
 
 .accordion-container {
