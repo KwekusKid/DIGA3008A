@@ -6,9 +6,9 @@
 
 /* Form styles */
 .form-container {
-   background-color: black;
+   background-color: var(--bg-color);
     border-radius: 1px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
     padding: 3rem;
     margin-top: 1rem;
 }
@@ -16,7 +16,7 @@
 .form-title {
      font-size: 1.5rem;       /* Adjust to make text smaller (e.g., 1.25rem) */
     margin: 1rem auto 2rem;  /* ↑ Top margin to raise position | ↔ Auto centers */
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--text-color);
     padding-bottom: 0.5rem;    /* Reduced from 2rem to shrink space under text */
     width: fit-content;      /* Ensures box shrinks to content width */
     text-align: center; 
@@ -36,8 +36,8 @@
 .nav-button {
     font-family: 'Times New Roman', Times, serif;
     padding: 0.5rem 1rem;
-    color: white;
-    background-color: black;
+    color: var(--text-color);
+    background-color: var(--bg-color);
     border: 1px solid #333;
     border-radius: 8px;
     cursor: pointer;
@@ -45,18 +45,18 @@
 }
 
 .nav-button:hover {
-    color:black;
-    background-color: white;
+    color:var(--bg-color);
+    background-color: var(--text-color);
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.583);
 }
 
 .nav-button.active {
-    background-color: #333;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .form-description {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     line-height: 1.6;
      text-align: center; 
 }
@@ -79,10 +79,10 @@
 .gallery-item {
   scroll-snap-align: start;
     flex: 0 0 auto;
-    width: 160px;
-    height: 200px;
-    background-color: black;
-      border: 1px solid #333;
+    width: 11.875rem;
+    height: 12.5rem;
+    background-color: var(--bg-color);
+    border: 1px solid #333;
     border-radius: 0;
     display: flex
 ;
@@ -124,7 +124,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +151,7 @@
 }
 
 .lightbox-description {
-    color: white;
+    color: var(--text-color);
     margin-top: 1rem;
     padding: 0 2rem;
     max-width: 600px;
@@ -163,7 +163,7 @@
     top: 20px;
     right: 20px;
     font-size: 2rem;
-    color: white;
+    color: var(--text-color);
     background: none;
     border: none;
     cursor: pointer;
@@ -175,8 +175,8 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+    background: rgba(var(--bg-color), 0,5);
     border: none;
     cursor: pointer;
     padding: 1rem;
