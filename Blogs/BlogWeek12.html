@@ -1,92 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Decolonized Internet </title>
     <meta name="description" content="Decolonialism, javascript and the progress of my website">
     <meta name="author" content="Apayin Odame- Takyi 2601677">
-    <link rel = "stylesheet" href = "../CSS/blogs/BlogTemplate.css"> 
-    <link rel = "stylesheet" href = "../main.css"> 
-    <script src ="../javascript/blogPosts.js"></script>
+    <link rel="stylesheet" href="../CSS/blogs/BlogTemplate.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="../javascript/blogPosts.js"></script>
     <script src="https://kit.fontawesome.com/bf38fba464.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/LightAndDarkMode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../javascript/main.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
             <input type="checkbox" id="check" hidden>
-            <label for="check"  class = "burger-button" id = "CollapsingMenu" ><i class="fa-solid fa-bars"></i></label>
-        
-            <ul nav class = "NavBar">
-                
-                <a href="../index.html"><h2 id = "Home">APAYIN</h2></a>
-                 <a href = "../Blogs/BlogHome.html"><h2>blogshome</h2></a>
-                <a href="../Design/DesignHomePage.html"><h2>design</h2></a>
-                <a href = "../Portfolio/Portfolio.html"><h2>portfolio</h2></a>
-                <a href = "../Profile/Profile.html"><h2>profile</h2></a>
-                <a href = "../Essays/Essays.html"><h2>essays</h2></a>
+            <label for="check" class="burger-button" id="CollapsingMenu"><i class="fa-solid fa-bars"></i></label>
+
+            <ul nav class="NavBar">
+
+                <a href="../index.html">
+                    <h2 id="Home">APAYIN</h2>
+                </a>
+                <a href="../Blogs/BlogHome.html">
+                    <h2>blogshome</h2>
+                </a>
+                <a href="../Design/DesignHomePage.html">
+                    <h2>design</h2>
+                </a>
+                <a href="../Portfolio/Portfolio.html">
+                    <h2>portfolio</h2>
+                </a>
+                <a href="../Profile/Profile.html">
+                    <h2>profile</h2>
+                </a>
+                <a href="../Essays/Essays.html">
+                    <h2>essays</h2>
+                </a>
+                <button id="themeToggle" aria-label="Toggle light/dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </button>
                 <label for="check" span class="closeNavBar">&times;</span>
             </ul>
-    
+
         </nav>
     </header>
-    <section class = "headerImage">
-        <img src = "../Images/blogThumbnails/Week12thumbnail.png" alt = "This is the Javascript logo, it the letters J and S next to one another with a black font colour and a yellow background " class = "Thumbnail">
-    
+    <section class="headerImage">
+        <img src="../Images/blogThumbnails/Week12thumbnail.png"
+            alt="This is the Javascript logo, it the letters J and S next to one another with a black font colour and a yellow background "
+            class="Thumbnail">
+
     </section>
 
-    <section class = "blogText">
-        <article class = "h-entry">
-            <h2 class = "p-name"> A Decolonized Internet</h2>
-    
+    <section class="blogText">
+        <article class="h-entry">
+            <h2 class="p-name"> A Decolonized Internet</h2>
+
             <p>By <span class="p-author"> Apayin Odame - Takyi 2601677</span></p>
-    
-            <p class = "p-summary">Decolonialism and the progression of my website with javascript</p>
 
-            <p class = "p-category"> What I want to change in my coding practice in the context of decolonialism?</p>
+            <p class="p-summary">Decolonialism and the progression of my website with javascript</p>
 
-           
- <div class = "divider"></div>
-  <section class = "Paragraph">
- <p>
-                
-               Firstly,  I want to get better at identifying coding practices that perpetuate colonialism. There's few I understand fully such as 
-               ignoring or not taking priority of local data. In this data driven society, I want to acknowledge local communities who will engage with 
-               my website and hopefully give them an enriching experience that is applicable to their context. 
-            </p>
-            
-            <p>
-                Secondly I want my website to have a deeper understanding of the context of my target audience and shape or form how can I enrich 
-                their context with my website. specifically in the long run, I would love to introduce a language feature specifically for different 
-                South African languages, where in which users on entry to my website can decide what language best suits their needs. 
-            </p>
+            <p class="p-category"> What I want to change in my coding practice in the context of decolonialism?</p>
 
-            <div class = "divider"></div>
-            <p>
-                What changes have I made to incorporate javascript?
-            </p>
 
-            
-            
 
-        
-  </section>
-           
+            <section class="Paragraph">
+                <div class="divider"></div>
+                <p>
+
+                    Firstly, I want to get better at identifying coding practices that perpetuate colonialism. There's
+                    few I understand fully such as
+                    ignoring or not taking priority of local data. In this data driven society, I want to acknowledge
+                    local communities who will engage with
+                    my website and hopefully give them an enriching experience that is applicable to their context.
+                </p>
+
+                <p>
+                    Secondly I want my website to have a deeper understanding of the context of my target audience and
+                    shape or form how can I enrich
+                    their context with my website. specifically in the long run, I would love to introduce a language
+                    feature specifically for different
+                    South African languages, where in which users on entry to my website can decide what language best
+                    suits their needs.
+                </p>
+
+                <div class="divider"></div>
+                <p>
+                    What changes have I made to incorporate javascript?
+                </p>
+
+
+
+
+
+            </section>
+
 
 
 
         </article>
 
+        <nav class="NextBlog">
+            <button id="prev">Previous Blog</button>
+            <button id="next">Next Blog</button>
+
     </section>
 
-    <nav class = "NextBlog">
-<button id = "prev">Previous Blog</button>
- <button id="next">Next Blog</button>
-    
-</nav>
+
+
+    </nav>
 
 </body>
+
 </html>
