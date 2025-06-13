@@ -1,9 +1,9 @@
 body {
-    background-color: black;
+    background-color: var(--bg-color);
 }
 
 #CollapsingMenu{
-    color:white;
+    color:var(--text-color);
     margin-top: 20px;
     cursor: pointer;
     font-size: 30px;
@@ -73,7 +73,7 @@ nav ul a:hover{
 
 .title a{
     text-decoration: none;
-    color: white
+    color: var(--text-color);
 }
 
 .title a:hover{

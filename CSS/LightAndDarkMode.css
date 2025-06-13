@@ -1,0 +1,47 @@
+#themeToggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+#themeToggle i {
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#themeToggle .fa-sun {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+#themeToggle .fa-moon {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+/* Dark mode styles */
+[data-theme="dark"] #themeToggle .fa-sun {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+[data-theme="dark"] #themeToggle .fa-moon {
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+
+/* Optional: Add hover effects */
+#themeToggle:hover {
+    transform: scale(1.1);
+    color: var(--accent-color);
+}

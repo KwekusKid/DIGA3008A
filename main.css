@@ -1,149 +1,219 @@
+/* ===== Light/Dark Mode Variables ===== */
+:root {
+  /* Light Mode (default) */
+  --bg-color: white;
+  --text-color: black;
+  --nav-bg: rgba(0, 0, 0, 0.9);
+  --accent-color: rgba(0, 175, 102, 255);
+  --footer-bg: black;
+
+  /* Dark Mode - will be activated via JavaScript */
+  &[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: white;
+    --nav-bg: rgba(20, 20, 20, 0.95);
+    --accent-color: rgba(0, 215, 132, 255);
+    --footer-bg: #0a0a0a;
+  }
+}
+
+/* ===== Updated Body Styles ===== */
 body {
-background-color: black;
-
-
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#CollapsingMenu{
-    color:white;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 30px;
-    margin-left: 10px;
+#CollapsingMenu {
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 10px;
 }
 
-.NavBar{
-    position:fixed;
-    right: -100%;
-    text-decoration: none;
+#themeToggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  z-index: 1000;
+  position: relative;
 }
 
-.NavBar a{
-    text-decoration: none;
+
+
+.NavBar {
+  background-color: var(--nav-bg);
+  position: fixed;
+  right: -100%;
+  text-decoration: none;
+}
+
+.NavBar a {
+  text-decoration: none;
 }
 
 .NavBar a:hover {
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-#Home:hover{
-    color: rgba(0,175,102,255);
-}
-#check:checked~ .NavBar{
-    right: 0%;
-    position: relative;
-  
+#Home:hover {
+  color: rgba(0, 175, 102, 255);
 }
 
-#check:checked ~ .TitleOfPage{
-    display: none;
+#check:checked~.NavBar {
+  right: 0%;
+  position: relative;
+
 }
 
-#check:checked ~ #CollapsingMenu{
-    display:none;
+#check:checked~.TitleOfPage {
+  display: none;
+}
+
+#check:checked~#CollapsingMenu {
+  display: none;
 }
 
 .closeNavBar {
-    position: relative;
-    top: 20px;
-    right: 30px;
-    font-size: 50px;
-    color: white;
-    cursor: pointer;
-  }
-body h1 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 20px;
+  right: 30px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
 }
 
-body h2{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+  color: var(--text-color);
+  /* color: white; */
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-body h3{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+/* Toggle icons */
+#themeToggle i {
+  position: absolute;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-body h4{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+#themeToggle .fa-sun {
+  opacity: 0;
+  transform: rotate(90deg);
 }
 
-body h5{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+#themeToggle .fa-moon {
+  opacity: 1;
+  transform: rotate(0deg);
 }
 
-body p{
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
+[data-theme="dark"] #themeToggle .fa-sun {
+  opacity: 1;
+  transform: rotate(0deg);
 }
 
-@media  (max-width: 768px) {
-    #CollapsingMenu {
-      font-size: 24px;
-      margin-left: 8px;
-      margin-top: 15px;
-    }
-  
-    .NavBar {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 100%;
-      height: 100vh;
-      background-color: black;
-      z-index: 999;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 24px;
-      transition: right 0.3s ease;
-    }
-  
-    .NavBar a {
-      font-size: 24px;
-    }
-  
-    #check:checked ~ .NavBar {
-      right: 0;
-      position: fixed;
-    }
-  
-    .closeNavBar {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 40px;
-    }
-  
-    body h1, body h2, body h3, body h4, body h5 {
-      font-size: 90%;
-      text-align: center;
-    }
-  
-    body p {
-      font-size: 90%;
-      text-align: center;
-      padding: 0 16px;
-    }
+[data-theme="dark"] #themeToggle .fa-moon {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+
+
+body p {
+
+  color: var(--text-color);
+
+  font-family: 'Times New Roman', Times, serif;
+  /* color: white; */
+}
+
+
+
+/* Toggle button styling  */
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #CollapsingMenu {
+    font-size: 24px;
+    margin-left: 8px;
+    margin-top: 15px;
   }
 
-  footer{
-   color: white;
+  .NavBar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    padding: 30px 0px;
-    width: 100%; 
+    gap: 24px;
+    transition: right 0.3s ease;
+  }
+
+  .NavBar a {
+    font-size: 24px;
+  }
+
+  #check:checked~.NavBar {
+    right: 0;
+    position: fixed;
+  }
+
+  .closeNavBar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+  }
+
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5 {
+    font-size: 90%;
+    text-align: center;
+  }
+
+  body p {
+    font-size: 90%;
+    text-align: center;
+    padding: 0 16px;
+  }
 }
 
-  .footer p{
-    
-    text-align: center;
-    font-size: 12px; 
-    margin-top: 20px; 
+footer {
+  background-color: var(--footer-bg);
+  color: white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 30px 0px;
+  width: 100%;
+}
+
+.footer p {
+
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
 }
