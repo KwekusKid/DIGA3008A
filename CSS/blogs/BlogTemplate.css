@@ -15,7 +15,6 @@ body{
 }
 
 
-
 .divider{
     border: none;
     border-top: 1px solid #ccc; 
@@ -24,22 +23,13 @@ body{
 }
 
 
-
-
 .Paragraph p{
     font-family: 'Times New Roman', Times, serif;
+     text-align: left;
 }
 .Paragraph h3{
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
-
-
-
 
 
 .Paragraph{
@@ -49,10 +39,6 @@ body{
     margin-left: 590px;
 }
 
-.Paragraph p{
-    text-align: left;
-
-}
 
 .Paragraph h3{
     font-family: Arial, Helvetica, sans-serif;
