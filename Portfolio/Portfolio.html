@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="../main.css">
   <script src="../javascript/Portfolio.js"></script>
   <script src="https://kit.fontawesome.com/bf38fba464.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/LightAndDarkMode.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="../javascript/main.js"></script>
 
 </head>
 
@@ -37,6 +40,10 @@
       <a href="../Essays/Essays.html">
         <h2>essays</h2>
       </a>
+      <button id="themeToggle" aria-label="Toggle light/dark mode">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+      </button>
       <label for="check" span class="closeNavBar">&times;</span>
     </ul>
     <h2 class="TitleOfPage">WORKS</h2>
@@ -49,7 +56,7 @@
       <input type="checkbox" id="games-toggle" class="accordion-toggle" hidden>
       <label for="games-toggle" class="accordion-header">
         <h3>GAMES</h3>
-      
+
       </label>
       <section class="accordion-content">
         <p>
@@ -70,50 +77,56 @@
       <input type="checkbox" id="photo-toggle" class="accordion-toggle" hidden>
       <label for="photo-toggle" class="accordion-header">
         <h3>PHOTOGRAPHY</h3>
-       
+
       </label>
       <section class="accordion-content">
+
         <section id="photography">
-          <div class = "landscape">
-            <img src="../Images/Photography/CSS.JPG" alt="Apayin holding a camera" >
-          </div>
-         
-          <div class = "portrait">
-            <img src="../Images/Photography/Fleu.png" alt="Picture of a woman smiling" >
-          </div>
-          <div class="description">
-
-          </div>
-          <div class = "portrait">
-            <img src="../Images/Photography/FleuBack.png" alt="Picture of a womans hair" >
-          </div>
-          <div class="description">
-
-          </div>
-          <div class = "portrait">
-            <img src="../Images/Photography/Nani.png" alt="Picture of a man" >
+          <div class="gallery-item">
+            <img src="../Images/Photography/CSS.JPG" alt="Apayin holding a camera">
+            <div class="image-caption">Apayin holding a camera</div>
           </div>
 
-          <div class = "landscape">
-             <img src = "../Images/Photography/HighAngle.jpg" alt="High angle shot for a group picture of the band When We Pretend" >
+          <div class="gallery-item">
+            <img src="../Images/Photography/Fleu.png" alt="Picture of a woman smiling">
+            <div class="image-caption">Portrait of a woman smiling</div>
           </div>
 
-          <div class = "landscape">
-           <img src = "../Images/Photography/whenWePretend5.jpeg" alt="">
+          <div class="gallery-item">
+            <img src="../Images/Photography/FleuBack.png" alt="Picture of a woman's hair">
+            <div class="image-caption">Close-up of hair</div>
           </div>
 
-          <div class = "landscape">
-            <img src = "../Images/Photography/LayingDownGroupPhoto.jpg" alt="">
+          <div class="gallery-item">
+            <img src="../Images/Photography/Nani.png" alt="Picture of a man">
+            <div class="image-caption">Portrait of a man</div>
           </div>
 
-          <div class = "landscape">
-           <img src = "../Images/Photography/whenWePretendGroupPhot.jpg" alt=""> 
+          <div class="gallery-item">
+            <img src="../Images/Photography/HighAngle.jpg" alt="High angle shot of the band When We Pretend">
+            <div class="image-caption">Band performance - high angle</div>
           </div>
 
-          
+          <div class="gallery-item">
+            <img src="../Images/Photography/whenWePretend5.jpeg" alt="Band performance shot">
+            <div class="image-caption">Band in action</div>
+          </div>
 
+          <div class="gallery-item">
+            <img src="../Images/Photography/LayingDownGroupPhoto.jpg" alt="Creative group photo">
+            <div class="image-caption">Creative group pose</div>
+          </div>
 
+          <div class="gallery-item">
+            <img src="../Images/Photography/whenWePretendGroupPhot.jpg" alt="Band group photo">
+            <div class="image-caption">Band group photo</div>
+          </div>
         </section>
+
+
+
+
+
       </section>
     </section>
 
@@ -121,7 +134,7 @@
       <input type="checkbox" id="film-toggle" class="accordion-toggle" hidden>
       <label for="film-toggle" class="accordion-header">
         <h3>FILM</h3>
-       
+
       </label>
       <section class="accordion-content">
         <p>COMING SOON!</p>

@@ -1,161 +1,307 @@
-.accordion-container {
-       max-width: 500px;
-    margin: 0 auto;
-    padding: 5px;
-    display: flex; /* Use flexbox for block-level children */
-    flex-direction: column;
-   
-    align-items: center; /* Centers children horizontally */
-
-  }
-
-  .accordion-container h3 {
-   color: white;
-   font-family: Arial, Helvetica, sans-serif;
-   
-  }
-  
-  .accordion-item {
-    margin-bottom: 4px;
-   
-
-  }
-
-  .accordion-item:hover h3{
-    text-decoration: underline;
-    
-  }
-  
-  .accordion-header {
-    background: none;
-    border: none;
-    outline: none;
-    width: 100%;
-    text-align: center;
-    padding: 32px;
-    font-size: 24px;
-    font-weight: bold;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-  
-  .accordion-header:hover {
-    background: none;
-  }
-  
-  .accordion-content {
-    max-height: 0;
+/* Add this to your CSS */
+body.gallery-scrolling {
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease;
-    padding: 0px 32px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    gap: 16px;
-  
-
-  }
-
-  #photography {
-    display: flex;           /* Horizontal flex layout */
-    flex-wrap: nowrap;       /* Prevent wrapping to new lines */
-    gap: 1rem;              /* Spacing between images */
-    overflow-x: auto;       /* Enable horizontal scrolling if needed */
-    padding: 1rem 0;        /* Add padding for scroll area */
-    scrollbar-width: none;  /* Hide scrollbar (optional) */
-   
-  }
-
-  #photography img {
-    max-height: 400px;      /* Control max height (adjust as needed) */
-    width: auto;            /* Let width adjust naturally */
-    object-fit: contain;    /* Prevent distortion */
-}
-
-/* #photography div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
-#photography .portrait img {
-    max-height: 500px;      /* Taller max for portrait images */
-}
-
-#photography .landscape img {
-    max-width: 600px;       /* Wider max for landscape images */
-    height: auto;
-}
-
-  .accordion-content img{
-   max-width: 100%;
-    height: auto;
-    max-height: 400px; /* Adjust as needed */
-    object-fit: contain;
-    background-color: black;
-    border: 1px solid #333;
-    transition: transform 0.3s ease;
-  }
-
-  .accordion-content img:hover{
-    transform: scale(1.05);
-  }
-
- /*.accordion-content img[src*="portrait"] {  Add a class or identifier to portrait images 
-    max-height: 500px;
-    width: auto;
-}
-*\
- For landscape images 
-.accordion-content img[src*="landscape"] {  Add a class or identifier to landscape images 
+    height: 100vh;
+    position: fixed;
     width: 100%;
-    height: auto;
-} */
+}
 
 
 
-  .accordion-toggle:checked + .accordion-header + .accordion-content {
-    max-height: 1000vh;
-    padding: 16px;
-     width: fit-content; /* Expands to fit content, but can grow */
-    min-width: 100%;  
-    overflow-x: auto;
-  }
+.accordion-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  /* Use flexbox for block-level children */
+  flex-direction: column;
 
-  .accordion-content p{
-    color:white;
-  }
-  
-  .accordion-content.open {
-    max-height: 500px; 
-    padding: 16px;
+  align-items: center;
+  /* Centers children horizontally */
+
+}
+
+.accordion-container h3 {
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.accordion-item {
+  margin-bottom: 4px;
+
+}
+
+.accordion-item:hover h3 {
+  text-decoration: underline;
+
+}
+
+.accordion-header {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  padding: 32px;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background: none;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0px 32px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  gap: 16px;
+
+
+}
+
+
+
+.accordion-content img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  /* Adjust as needed */
+  object-fit: contain;
+  background-color: var(--bg-color);
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+.accordion-toggle:checked+.accordion-header+.accordion-content {
+  max-height: 1000vh;
+  padding: 16px;
+  width: fit-content;
+  /* Expands to fit content, but can grow */
+  min-width: 100%;
+  overflow-x: auto;
+}
+
+.accordion-content p {
+  color: var(--text-color)
+}
+
+.accordion-content.open {
+  max-height: 500px;
+  padding: 16px;
+
+}
+
+/* ===== Photography Gallery ===== */
+#photography {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) transparent;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain; /* Prevent scroll chaining */
+   
     
+}
+
+#photography::-webkit-scrollbar {
+  height: 8px;
+}
+
+#photography::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+/* Gallery Item Container */
+.gallery-item {
+  position: relative;
+  flex: 0 0 auto;
+  width: 300px;
+  /* Fixed width for consistency */
+  height: 400px;
+  /* Fixed height for consistency */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+/* Gallery Image */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Image Caption */
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: (var(--bg-color)0,5);
+  color: var(--text-color);
+  padding: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .image-caption {
+  transform: translateY(0);
+}
+
+/* ===== Lightbox Styles ===== */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: (var(--bg-color)0,5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#lightbox.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#lightbox-img {
+  max-height: 80vh;
+  max-width: 90vw;
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  color: var(--text-color);
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  max-width: 80%;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.lightbox-btn {
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
+  border: none;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.lightbox-btn:hover {
+  background: var(--accent-color);
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 250px;
+    height: 350px;
   }
-  
 
-
-
-
-
-  @media screen and (max-width: 768px) {
-    .accordion-header {
-      font-size: 20px;
-      padding: 20px;
-    }
-  
-    .accordion-content {
-      grid-template-columns: 1fr; /* Stack images vertically */
-      padding: 8px;
-    }
-  
-    .accordion-content img {
-      width: 100%;
-    }
-  
-    .accordion-container {
-      padding: 10px;
-      max-width: 100%;
-    }
+  .lightbox-nav {
+    padding: 0 10px;
   }
 
+  .lightbox-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
 
-  
+
+
+
+@media screen and (max-width: 768px) {
+  .accordion-header {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .accordion-content {
+    grid-template-columns: 1fr;
+    /* Stack images vertically */
+    padding: 8px;
+  }
+
+  .accordion-content img {
+    width: 100%;
+  }
+
+  .accordion-container {
+    padding: 10px;
+    max-width: 100%;
+  }
+}

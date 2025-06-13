@@ -202,8 +202,8 @@ body p {
 }
 
 footer {
-  background-color: var(--footer-bg);
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   justify-content: center;
   text-align: center;
   align-items: center;
